@@ -549,6 +549,14 @@ div.popup.active {
     display: grid;
 }
 
+div.popup span.popup {
+    display: block;
+
+
+    width: 20px;
+    30px
+}
+
 div.popup-container {
     background-color: var(--black-00);
 
@@ -664,12 +672,14 @@ div.popup-container iframe.popup-video {
     }
 
     header#main nav ul img.action-menu{
-        top: 0;
+        height: 52px;
+        top: -8px;
+        right: -4px;
     }
 
     header#main img.action-menu.menu {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 }
 
