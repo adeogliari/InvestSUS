@@ -38,10 +38,10 @@
                     O InvestSUS é uma ferramenta que permite o acesso aos serviços, sistemas e informações no que tange a gestão do financiamento federal do SUS pelos municípios, estados, Distrito Federal e entidades públicas e privadas sem fins lucrativos.
                 </p>
                 <div id="investsus-content-buttons">
-                    <button type="button" id="botao-assistir-video-investsus" class="btn btn-2">
-                        Conheça
+                    <button type="button" data-value="popup-video-investsus" class="btn btn-2 btn-popup">
+                        Assistir ao Vídeo
                     </button>
-                    <button type="button" id="botao-acessar-investsus" class="btn btn-1">
+                    <button type="button" onclick="window.open('https://investsus.saude.gov.br/login')" class="btn btn-1">
                         Acesse Agora
                     </button>
                 </div>
@@ -166,12 +166,14 @@
                         <p>Para acessar o InvestSUS, é necessário possuir um cadastro no SCPA e um perfil de usuário devidamente autorizado.</p>
                     </div>
                     <div class="comoAcessar-item">
-                        <a class="comoAcessar-videos" href="#">
-                            <img src="assets/img/play.svg" alt="Vídeo Cadastrando no sCPA">
+                        <div class="comoAcessar-videos">
+                            <button type="button" data-value="popup-video-cadastrando-scpa" class="btn-popup">
+                                <img src="assets/img/play.svg" alt="Assistir Vídeo Cadastrando no SCPA">
+                            </button>
                             <h3>Cadastrando no SCPA</h3>
-                        </a>
+                        </div>
                         <ul>
-                        <li>Acesse a página <a href="">scpa.saude.gov.br</a> </li>
+                        <li>Acesse a página <a href="https://scpa.saude.gov.br" target="_blank" rel="noopener noreferrer">scpa.saude.gov.br</a> </li>
                         <li>Clique em “Novo por aqui?”</li>
                         <li>Preencha o CPF e o Captcha</li>
                         <li>Valide os dados solicitados</li>
@@ -179,13 +181,16 @@
                         <li>Confirme o cadastro de novo usuário</li>
                     </ul>
                     </div>
+
                     <div class="comoAcessar-item">
-                        <a class="comoAcessar-videos" href="#">
-                            <img src="assets/img/play.svg" alt="Vídeo Cadastrando no sCPA">
-                            <h3>Solicitando Perfil no SCPA</h3>
-                        </a>
+                        <div class="comoAcessar-videos">
+                            <button type="button" data-value="popup-video-solicitando-perfil" class="btn-popup">
+                                <img src="assets/img/play.svg" alt="Assistir Vídeo Cadastrando no SCPA">
+                            </button>
+                            <h3>Solicitando perfil no SCPA</h3>
+                        </div>
                         <ul>
-                        <li>Acesse a página <a href="">scpa.saude.gov.br</a> </li>
+                        <li>Acesse a página <a href="https://scpa.saude.gov.br" target="_blank" rel="noopener noreferrer">scpa.saude.gov.br</a> </li>
                         <li>Entre com seu usuário e senha</li>
                         <li>Procure pelo sistema InvestSUS</li>
                         <li>Clique em “Solicitar Acesso”</li>
@@ -194,13 +199,26 @@
                         <li>Clique em “Solicitar Acesso”</li>
                     </ul>
                     </div>
+
                     <div class="comoAcessar-item">
-                        <a class="comoAcessar-videos" href="#">
-                            <img src="assets/img/play.svg" alt="Vídeo Cadastrando no sCPA">
+                        <div class="comoAcessar-videos">
+                            <button type="button" data-value="popup-video-acessando-gov" class="btn-popup">
+                                <img src="assets/img/play.svg" alt="Assistir Vídeo Acessando com gov.br">
+                            </button>
                             <h3>Acessando com gov.br</h3>
-                        </a>
-                        <p>Para acessar o InvestSUS através do gov.br é necessário que o usuário possua um cadastro no SCPA e um perfil devidamente autorizado.</p>
+                        </div>
+                        <p>Para acessar o InvestSUS através do Gov.br o usuário deve possuir um cadastro no SCPA e um perfil devidamente autorizado.</p>
                     </div>
+
+<!--                    <div class="comoAcessar-item">-->
+<!--                        <div class="comoAcessar-videos">-->
+<!--                            <button type="button" data-value="popup-video-liberando-acessos" class="btn-popup">-->
+<!--                                <img src="assets/img/play.svg" alt="Assistir Vídeo Liberando Acesso">-->
+<!--                            </button>-->
+<!--                            <h3>Liberando acessos pelo SCPA</h3>-->
+<!--                        </div>-->
+<!--                        <p></p>-->
+<!--                    </div>-->
                 </div>
             </div>
         </section>
@@ -568,5 +586,57 @@
             <img src="assets/img/rodape.webp" alt="Fale Conosco">
         </div>
     </footer>
+
+    <div id="popup-video-investsus" class="popup" data-value="popup-video-investsus">
+        <div class="popup-container">
+            <iframe class="popup-video" src="about:blank" data-src="https://www.youtube-nocookie.com/embed/0s7YrlQsGmM"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id="popup-video-cadastrando-scpa" class="popup" data-value="popup-video-cadastrando-scpa">
+        <div class="popup-container">
+            <iframe class="popup-video" src="about:blank" data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id="popup-video-solicitando-perfil" class="popup" data-value="popup-video-solicitando-perfil">
+        <div class="popup-container">
+            <iframe class="popup-video" src="about:blank" data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id="popup-video-acessando-gov" class="popup" data-value="popup-video-acessando-gov">
+        <div class="popup-container">
+            <iframe class="popup-video" src="about:blank" data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id="popup-video-liberando-acessos" class="popup" data-value="popup-video-liberando-acessos">
+        <div class="popup-container">
+            <iframe class="popup-video" src="about:blank" data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
