@@ -154,6 +154,7 @@ header#main li a:hover:after,  header#main li a.active-menu:after{
 main section {
     min-height: 100vh;
     padding: 80px 0;
+    /*margin: 80px 0;*/
 }
 
 section#investsus {
@@ -298,22 +299,22 @@ section#comoAcessar .comoAcessar-item p {
     margin-left: 28px;
 }
 
-section#perfisDeUsuario .container {
+section#perfisDeAcesso .container {
     display: grid;
     gap: 24px;
 }
 
-section#perfisDeUsuario div#perfisDeUsuario-title p {
+section#perfisDeAcesso div#perfisDeAcesso-title p {
     margin-top: 8px;
     max-width: 70%;
 }
 
-section#perfisDeUsuario div#perfisDeUsuario-perfis-container {
+section#perfisDeAcesso div#perfisDeAcesso-perfis-container {
     display: grid;
     gap: 24px;
 }
 
-section#perfisDeUsuario .tipo-entidade {
+section#perfisDeAcesso .tipo-entidade {
     background-color: var(--black-00);
     padding: 16px 24px;
 
@@ -323,11 +324,11 @@ section#perfisDeUsuario .tipo-entidade {
     border-radius: var(--border-radius);
 }
 
-section#perfisDeUsuario .tipo-entidade h3 {
+section#perfisDeAcesso .tipo-entidade h3 {
     position: relative;
 }
 
-section#perfisDeUsuario .tipo-entidade h3:before {
+section#perfisDeAcesso .tipo-entidade h3:before {
     content: '';
 
     background-color: var(--primary-03-acent);
@@ -341,7 +342,7 @@ section#perfisDeUsuario .tipo-entidade h3:before {
     left: -24px;
 }
 
-section#perfisDeUsuario .tipo-entidade h3:after {
+section#perfisDeAcesso .tipo-entidade h3:after {
     content: '+';
 
     color: var(--primary-06);
@@ -357,19 +358,19 @@ section#perfisDeUsuario .tipo-entidade h3:after {
     right: 0;
 }
 
-section#perfisDeUsuario .perfis-container {
+section#perfisDeAcesso .perfis-container {
     padding: 0 16px;
 
     display: grid;
     gap: 24px;
 }
 
-section#perfisDeUsuario .tipo-entidade-card {
+section#perfisDeAcesso .tipo-entidade-card {
     display: grid;
     gap: 8px;
 }
 
-section#perfisDeUsuario .tipo-entidade-card:not(:last-child):after {
+section#perfisDeAcesso .tipo-entidade-card:not(:last-child):after {
     content: '';
     display: block;
 
@@ -379,7 +380,7 @@ section#perfisDeUsuario .tipo-entidade-card:not(:last-child):after {
     height: 1px;
 }
 
-section#perfisDeUsuario .tipo-entidade-card span{
+section#perfisDeAcesso .tipo-entidade-card span{
     background: var(--span-gradient);
 
     width: 50px;
@@ -388,15 +389,15 @@ section#perfisDeUsuario .tipo-entidade-card span{
     display: block;
 }
 
-section#perfisDeUsuario .tipo-entidade-card ul {
+section#perfisDeAcesso .tipo-entidade-card ul {
     margin-left: 18px;
 }
 
-section#perfisDeUsuario .tipo-entidade-card li {
+section#perfisDeAcesso .tipo-entidade-card li {
     margin: 8px 0;
 }
 
-section#perfisDeUsuario .tipo-entidade-card strong {
+section#perfisDeAcesso .tipo-entidade-card strong {
     color: var(--primary-06);
     font-weight: 500;
 }
