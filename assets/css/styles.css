@@ -151,6 +151,10 @@ header#main li a:hover:after,  header#main li a.active-menu:after{
     transition: all .3s;
 }
 
+header#main img.action-menu {
+    display: none;
+}
+
 main section {
     min-height: 100vh;
     padding: 80px 0;
@@ -316,7 +320,6 @@ section#perfisDeAcesso div#perfisDeAcesso-perfis-container {
 
 section#perfisDeAcesso .tipo-entidade {
     background-color: var(--black-00);
-    padding: 16px 24px;
 
     display: grid;
     gap: 28px;
@@ -325,7 +328,15 @@ section#perfisDeAcesso .tipo-entidade {
 }
 
 section#perfisDeAcesso .tipo-entidade h3 {
+    padding: 16px 24px;
+
     position: relative;
+
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+
+    scroll-margin: 80px;
 }
 
 section#perfisDeAcesso .tipo-entidade h3:before {
@@ -334,12 +345,12 @@ section#perfisDeAcesso .tipo-entidade h3:before {
     background-color: var(--primary-03-acent);
 
     display: block;
-    width: 4px;
+    width: 5px;
     height: 50px;
 
     position: absolute;
-    top: -16px;
-    left: -24px;
+    top: 0;
+    left: 0;
 }
 
 section#perfisDeAcesso .tipo-entidade h3:after {
@@ -355,14 +366,22 @@ section#perfisDeAcesso .tipo-entidade h3:after {
 
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 24px;
+}
+
+section#perfisDeAcesso .tipo-entidade h3.active:after {
+    content: '-';
 }
 
 section#perfisDeAcesso .perfis-container {
-    padding: 0 16px;
+    padding: 0 48px 12px;
 
-    display: grid;
+    display: none;
     gap: 24px;
+}
+
+section#perfisDeAcesso .perfis-container.active {
+    display: grid;
 }
 
 section#perfisDeAcesso .tipo-entidade-card {
@@ -614,10 +633,12 @@ div.popup-container iframe.popup-video {
     header#main ul {
         background-color: var(--black-00);
 
-        width: 320px;
+        font-size: 1.5em;
+
+        width: 100vw;
         height: 100vh;
 
-        padding: 0 40px;
+        padding: 60px 40px;
 
         display: none;
         flex-direction: column;
@@ -625,15 +646,28 @@ div.popup-container iframe.popup-video {
         list-style: none;
         gap: 24px;
 
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 0;
         right: 0;
 
         box-shadow: var(--shadow-01-invert);
-
     }
 
+    header#main ul.active {
+        display: flex;
+    }
 
+    header#main img.action-menu {
+        height: 60px;
+        display: block;
+
+        position: relative;
+    }
+
+    header#main img.action-menu.menu {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media screen and (max-width: 420px) {
