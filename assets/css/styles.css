@@ -638,7 +638,7 @@ div.popup-container iframe.popup-video {
         width: 100vw;
         height: 100vh;
 
-        padding: 60px 40px;
+        padding: 60px 16px;
 
         display: none;
         flex-direction: column;
@@ -658,10 +658,13 @@ div.popup-container iframe.popup-video {
     }
 
     header#main img.action-menu {
-        height: 60px;
         display: block;
 
         position: relative;
+    }
+
+    header#main nav ul img.action-menu{
+        top: -50px;
     }
 
     header#main img.action-menu.menu {
