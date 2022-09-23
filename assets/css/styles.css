@@ -694,7 +694,12 @@ div.popup-container .investsus-content-buttons .btn-popup {
 
 @media screen and (max-width: 420px) {
     section#funcionalidades .container-funcionalidades .principais {
-        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    section#funcionalidades .container-funcionalidades .principais .card {
+        padding: 10px;
+
     }
 
 
