@@ -177,7 +177,7 @@ section#investsus .container {
     gap: 32px;
 }
 
-section#investsus .container p, section#investsus .container h1, section#investsus .container #investsus-content-buttons{
+section#investsus .container p, section#investsus .container h1, section#investsus .container .investsus-content-buttons{
     color: var(--black-00);
     width: 45%;
 }
@@ -198,23 +198,10 @@ section#investsus .container img#investsus-background-img {
     transform: translateY(calc(-50% + 30px));
 }
 
-section#investsus div#investsus-content-buttons {
+div.investsus-content-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-}
-
-img#mouse-scroll-icon {
-    width: 80px;
-    height: 80px;
-
-    position: absolute;
-    bottom: 30px;
-    right: 50%;
-
-    transform: translateX(50%);
-
-    opacity: .4;
 }
 
 section#funcionalidades .container {
@@ -346,7 +333,7 @@ section#perfisDeAcesso .tipo-entidade h3:before {
 
     display: block;
     width: 5px;
-    height: 50px;
+    height: 100%;
 
     position: absolute;
     top: 0;
@@ -460,6 +447,10 @@ section#perfisDeAcesso .tipo-entidade-card strong {
 
     border: 2px solid
 }
+
+.comoAcessar-videos .btn-popup:hover {
+    cursor: pointer;
+}
 /*</editor-fold>*/
 
 /*<editor-fold desc="Funcionalidades Cards">*/
@@ -540,28 +531,29 @@ div.popup {
 
     display: none;
     place-content: center;
+    align-items: center;
 
     position: fixed;
     top: 0;
+
+    z-index: 999;
 }
 
 div.popup.active {
-    display: grid;
-}
-
-div.popup span.popup {
-    display: block;
-
-
-    width: 20px;
-    30px
+    display: flex;
 }
 
 div.popup-container {
     background-color: var(--black-00);
 
     width: 980px;
-    height: 572px;
+    height: 640px;
+
+    max-height: calc(80%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
     padding: 24px;
 
@@ -575,8 +567,20 @@ div.popup-container iframe.popup-video {
     height: 100%;
 }
 
-.btn-popup {
-    cursor: pointer;
+div.popup-container .investsus-content-buttons {
+    place-self: end;
+}
+
+div.popup-container .investsus-content-buttons .btn-popup {
+    font-size: .9em;
+
+    padding: 12px 16px;
+}
+
+.btn-close-popup {
+    color: var(--primary-03-acent);
+    border: none;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -596,12 +600,8 @@ div.popup-container iframe.popup-video {
         transform: translateY(0);
     }
 
-    section#investsus .container p, section#investsus .container h1, section#investsus .container #investsus-content-buttons{
+    section#investsus .container p, section#investsus .container h1, section#investsus .container .investsus-content-buttons{
         width: 100%;
-    }
-
-    img#mouse-scroll-icon {
-        display: none;
     }
 
     section#funcionalidades .container-funcionalidades {
@@ -614,7 +614,10 @@ div.popup-container iframe.popup-video {
 
     div.popup-container {
         width: 680px;
-        height: 480px;
+        height: 470px;
+
+        gap: 16px;
+        padding: 16px;
     }
 }
 
@@ -633,9 +636,7 @@ div.popup-container iframe.popup-video {
 
     div.popup-container {
         width: 420px;
-        height: 360px;
-
-        padding: 16px;
+        height: 316px;
     }
 
     header#main ul {
@@ -681,6 +682,14 @@ div.popup-container iframe.popup-video {
         width: 30px;
         height: 30px;
     }
+
+    section#perfisDeAcesso .tipo-entidade h3 {
+        padding: 16px;
+    }
+
+    section#perfisDeAcesso .tipo-entidade h3:after {
+        right: 10px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -689,13 +698,13 @@ div.popup-container iframe.popup-video {
     }
 
 
-    section#investsus div#investsus-content-buttons {
+    section#investsus div.investsus-content-buttons {
         grid-template-columns: 1fr;
     }
 
     div.popup-container {
         width: 320px;
-        height: 240px;
+        height: 249px;
 
         padding: 12px;
     }
