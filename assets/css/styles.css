@@ -722,6 +722,14 @@ img#scroll-up:hover {
     img#scroll-up {
         width: 45px;
     }
+
+    div.popup-funcionalidades .popup-container {
+        height: 100vh;
+    }
+
+    div.popup-funcionalidades .popup-container p {
+        overflow-y: auto;
+    }
 }
 
 @media screen and (max-width: 420px) {
