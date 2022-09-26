@@ -1,5 +1,5 @@
 function GetElements(seletor) {
-    this.togglePopup  = () => {
+    this.togglePopup = () => {
         const elements = document.querySelectorAll(seletor);
 
         elements.forEach(item => {
