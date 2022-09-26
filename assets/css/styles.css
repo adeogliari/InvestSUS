@@ -633,6 +633,22 @@ div.popup-funcionalidades .investsus-content-buttons {
     }
 }
 
+img#scroll-up {
+    width: 60px;
+
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+    box-shadow: var(--shadow-01);
+}
+
+img#scroll-up:hover {
+    box-shadow: var(--shadow-02);
+}
+
 @media screen and (max-width: 680px) {
     h1, h2 {
         font-size: 2.3em;
@@ -701,6 +717,10 @@ div.popup-funcionalidades .investsus-content-buttons {
 
     section#perfisDeAcesso .tipo-entidade h3:after {
         right: 10px;
+    }
+
+    img#scroll-up {
+        width: 45px;
     }
 }
 
