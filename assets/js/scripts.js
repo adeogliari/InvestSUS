@@ -59,6 +59,7 @@ function openPopup(popup) {
 
         activePopupVideo.setAttribute('src', src);
     }
+
 }
 
 

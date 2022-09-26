@@ -535,6 +535,7 @@ div.popup {
 
     position: fixed;
     top: 0;
+    right: 0;
 
     z-index: 999;
 }
@@ -580,7 +581,18 @@ div.popup-container .investsus-content-buttons .btn-popup {
 .btn-close-popup {
     color: var(--primary-03-acent);
     border: none;
+}
 
+div.popup-funcionalidades .popup-container {
+    justify-content: space-between;
+}
+
+div.popup-funcionalidades .popup-container p{
+    padding: 24px;
+}
+
+div.popup-funcionalidades .investsus-content-buttons {
+    display: block;
 }
 
 @media screen and (max-width: 1000px) {
