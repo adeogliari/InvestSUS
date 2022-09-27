@@ -209,6 +209,16 @@ section#funcionalidades .container {
     gap: 32px;
 }
 
+.funcionalidade-titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.funcionalidade-titulo-container img, .funcionalidade-titulo-container h3{
+    display: inline-block;
+}
+
 section#comoAcessar {
     min-height: 100vh;
     background: url("../img/investsus_computer_background.webp") center no-repeat;
@@ -588,6 +598,9 @@ div.popup-funcionalidades .popup-container {
 }
 
 div.popup-funcionalidades .popup-container p{
+    height: 100%;
+    display: flex;
+    place-items: center;
     padding: 24px;
 }
 
@@ -630,6 +643,10 @@ div.popup-funcionalidades .investsus-content-buttons {
 
         gap: 16px;
         padding: 16px;
+    }
+
+    section#perfisDeAcesso div#perfisDeAcesso-title p {
+        max-width: 100%;
     }
 }
 

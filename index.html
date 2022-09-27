@@ -6,10 +6,10 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-          rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com" rel="preconnect">-->
+<!--    <link href="https://fonts.gstatic.com" rel="preconnect">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"-->
+<!--          rel="stylesheet">-->
 
     <link href="assets/css/styles.css" rel="stylesheet">
 
@@ -75,23 +75,35 @@
             <div class="container-funcionalidades">
                 <div class="laterais">
                     <div class="card btn-popup" data-value="popup-funcionalidades-paineis">
-                        <h3>Painéis</h3>
+                        <div class="funcionalidade-titulo-container">
+                            <img alt="Painéis" src="assets/img/paineis.svg"/>
+                            <h3>Painéis</h3>
+                        </div>
                         <span></span>
                         <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>
                     </div>
                     <div class="card btn-popup" data-value="popup-funcionalidades-acessos">
-                        <h3>Acessos</h3>
+                        <div class="funcionalidade-titulo-container">
+                            <img alt="Painéis" src="assets/img/acessos.svg"/>
+                            <h3>Acessos</h3>
+                        </div>
                         <span></span>
-                        <p>Facilita os gestores o acesso os módulos de cadastro, solicitação e gestão dos perfis de
-                            acesso..</p>
+                        <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de
+                            acesso.</p>
                     </div>
                     <div class="card btn-popup" data-value="popup-funcionalidades-sistemas">
-                        <h3>Sistemas</h3>
+                        <div class="funcionalidade-titulo-container">
+                            <img alt="Painéis" src="assets/img/sistemas.svg"/>
+                            <h3>Sistemas</h3>
+                        </div>
                         <span></span>
                         <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS.</p>
                     </div>
                     <div class="card btn-popup" data-value="popup-funcionalidades-relatorios">
-                        <h3>Relatórios</h3>
+                        <div class="funcionalidade-titulo-container">
+                            <img alt="Painéis" src="assets/img/relatorios.svg"/>
+                            <h3>Relatórios</h3>
+                        </div>
                         <span></span>
                         <p>Emissão de relatórios detalhados com dados sobre a entidade de forma rápida, prática,
                             intuitiva e com poucos cliques.</p>
@@ -164,7 +176,7 @@
                 <h2>Perfis de Acesso</h2>
                 <p>
                     Conforme identificação e autorização no SCPA, cada usuário poderá solicitar ou ter acesso ao
-                    InvestSUS de acordo com um dos seguintes perfis vinculados a Entidade.
+                    InvestSUS de acordo com um dos núcleos abaixo.
                 </p>
             </div>
             <div id="perfisDeAcesso-perfis-container">
@@ -177,7 +189,7 @@
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
-                            <h4>Dirigente de Entidade Estadual ou Municipal</h4>
+                            <h4>Dirigente de Entidade Municipal ou Estadual</h4>
                             <span></span>
                             <p>
                                 Visualiza informações, insere e edita propostas, atualiza informações de cadastro da
@@ -199,7 +211,7 @@
                             </ul>
                         </div>
                         <div class="tipo-entidade-card">
-                            <h4>Técnico Institucional Estadual/Municipal </h4>
+                            <h4>Técnico Institucional Municipal ou Estadual</h4>
                             <span></span>
                             <p>
                                 Visualiza informações, insere e edita propostas, atualiza informações de cadastro da
@@ -221,7 +233,7 @@
                             </ul>
                         </div>
                         <div class="tipo-entidade-card">
-                            <h4>Leitor Estadual/Municipal </h4>
+                            <h4>Leitor Municipal ou Estadual </h4>
                             <span></span>
                             <p>
                                 Visualiza informações
@@ -753,6 +765,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-paineis"
          id="popup-funcionalidades-paineis">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Painéis" src="assets/img/paineis.svg"/>
+                <h3>Painéis</h3>
+            </div>
+
             <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>
 
             <div class="investsus-content-buttons">
@@ -767,7 +784,12 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-acessos"
          id="popup-funcionalidades-acessos">
         <div class="popup-container">
-            <p>Facilita os gestores o acesso os módulos de cadastro, solicitação e gestão dos perfis de acesso.</p>
+            <div class="funcionalidade-titulo-container">
+                <img alt="Acessos" src="assets/img/acessos.svg"/>
+                <h3>Acessos</h3>
+            </div>
+
+            <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de acesso.</p>
 
             <div class="investsus-content-buttons">
                 <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-acessos"
@@ -781,6 +803,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-sistemas"
          id="popup-funcionalidades-sistemas">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Sistemas" src="assets/img/sistemas.svg"/>
+                <h3>Sistemas</h3>
+            </div>
+
             <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS e o
                 acompanhamento da execução dos instrumentos de manutenção, obras e equipamentos.</p>
 
@@ -796,6 +823,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-relatorios"
          id="popup-funcionalidades-relatorios">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Relatórios" src="assets/img/relatorios.svg"/>
+                <h3>Relatórios</h3>
+            </div>
+
             <p>
                 O relatório é uma ferramenta gerencial para que os gestores possam ter acesso às informações referentes
                 aos recursos repassados aos estados e municípios, acompanhar os saldos existentes nas contas bancárias e
@@ -819,6 +851,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-cadastro"
          id="popup-funcionalidades-cadastro">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Cadastro" src="assets/img/cadastro.svg"/>
+                <h3>Cadastro</h3>
+            </div>
+
             <p>Acesso aos dados cadastrais da entidade junto ao FNS e a atualização das informações dos Fundos Públicos
                 de Saúde por meio do SIOPS para as entidades públicas. O módulo Habilitação permite às entidades
                 privadas visualizar e encaminhar os documentos para habilitação da entidade.</p>
@@ -835,6 +872,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-propostas"
          id="popup-funcionalidades-propostas">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Propostas" src="assets/img/propostas.svg"/>
+                <h3>Painéis</h3>
+            </div>
+
             <p>
                 Apresentação do cadastramento de propostas e transferências voluntárias de investimentos na Rede de
                 Atenção à Saúde, bem como o acompanhamento das etapas, pareceres, informações de empenho e pagamento.
@@ -857,6 +899,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-saldos"
          id="popup-funcionalidades-saldos">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Saldos" src="assets/img/saldos.svg"/>
+                <h3>Saldos</h3>
+            </div>
+
             <p>Apresenta informações de saldos disponíveis nas contas ativas junto ao FNS, histórico e gráfico das
                 movimentações financeiras.</p>
 
@@ -872,6 +919,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-repasses"
          id="popup-funcionalidades-repasses">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Repasses" src="assets/img/repasses.svg"/>
+                <h3>Repasses</h3>
+            </div>
+
             <p>Acesso as informações dos recursos federais repassados aos Fundos Públicos de Saúde nas contas vinculadas
                 ao CNPJ da entidade, apresentando as informações por dia, mês e ano, além da identificação por
                 grupo. </p>
@@ -888,6 +940,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-recursos"
          id="popup-funcionalidades-recursos">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Recursos" src="assets/img/recursos.svg"/>
+                <h3>Recursos</h3>
+            </div>
+
             <p>Apresenta informações dos recursos orçamentários de emenda ou programa disponíveis a entidade para
                 indicação de objetos e cadastro de propostas de investimentos.</p>
 
@@ -903,6 +960,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-contas"
          id="popup-funcionalidades-contas">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Contas" src="assets/img/contas.svg"/>
+                <h3>Contas</h3>
+            </div>
+
             <p>Acesso as informações dos domicílios bancários da entidade vinculados ao Fundo Nacional de Saúde, como
                 nome da agência, descrição da conta e saldo disponível. </p>
 
@@ -918,6 +980,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-manutencao"
          id="popup-funcionalidades-manutencao">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Manutenção" src="assets/img/manutencao.svg"/>
+                <h3>Manutenção</h3>
+            </div>
+
             <p>Apresenta as informações das propostas para manutenção e custeio, formalizadas por meio de Portaria ou
                 Convênio, permite visualizar o extrato da proposta, acessar o instrumento, informações de empenho e
                 pagamento. </p>
@@ -933,6 +1000,11 @@
 
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-obras" id="popup-funcionalidades-obras">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Obras" src="assets/img/obras.svg"/>
+                <h3>Obras</h3>
+            </div>
+
             <p>Apresenta as informações das propostas para obras em unidades de saúde, formalizadas por meio de Portaria
                 ou Convênio, permite visualizar o extrato da proposta, acessar o instrumento, informações de empenho e
                 pagamento.</p>
@@ -949,6 +1021,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-equipamentos"
          id="popup-funcionalidades-equipamentos">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Equipamentos" src="assets/img/equipamentos.svg"/>
+                <h3>Equipamentos</h3>
+            </div>
+
             <p>Apresenta as informações das propostas para aquisição de equipamentos e materiais permanentes,
                 formalizadas por meio Portaria ou Convênio, permite visualizar o extrato da proposta, acessar o
                 instrumento, informações de empenho e pagamento, além da verificação dos equipamentos contemplados por
@@ -966,6 +1043,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-consignado"
          id="popup-funcionalidades-consignado">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Consignado" src="assets/img/consignado.svg"/>
+                <h3>Consignado</h3>
+            </div>
+
             <p>Permite as entidades privadas ter acesso ao processo de solicitação de empréstimo consignado, consultas
                 sobre margem, agilidade no processo com autenticação do Ministério da Saúde e solicitação de crédito às
                 instituições financeiras.</p>
@@ -982,6 +1064,11 @@
     <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-limites"
          id="popup-funcionalidades-limites">
         <div class="popup-container">
+            <div class="funcionalidade-titulo-container">
+                <img alt="Limites" src="assets/img/limites.svg"/>
+                <h3>Limites</h3>
+            </div>
+
             <p>Apresenta informações sobre os limites PAP (Programa da atenção Primária) e MAC (Média e Alta
                 Complexidade) disponíveis a serem indicados.</p>
 
