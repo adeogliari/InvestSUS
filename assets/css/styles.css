@@ -85,6 +85,15 @@ img {
     display: block;
 }
 
+.container {
+    width: 100%;
+    max-width: 1240px;
+
+    padding: 0 16px;
+
+    margin: 0 auto;
+}
+
 header#main {
     background-color: var(--black-00);
 
@@ -156,30 +165,33 @@ header#main img.action-menu {
 }
 
 main section {
-    min-height: 100vh;
     padding: 80px 0;
-    /*margin: 80px 0;*/
 }
 
 section#investsus {
+    min-height: 100vh;
     background: linear-gradient(#168CE0 50.62%, rgba(43, 169, 247, 0) 97%);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
 }
 
 section#investsus .container {
+    max-width: 1440px;
+    height: calc(100vh - 160px);
+    color: var(--black-00);
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    gap: 24px;
+}
+
+section#investsus .content-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
-section#investsus .container p, section#investsus .container h1, section#investsus .container .investsus-content-buttons{
-    color: var(--black-00);
-    width: 45%;
+section#investsus h1 {
+    color: inherit;
 }
 
 section#investsus p {
@@ -187,15 +199,10 @@ section#investsus p {
 }
 
 
-section#investsus .container img#investsus-background-img {
-    width: 62%;
+section#investsus img#investsus-background-img {
+    width: 100%;
     min-width: 630px;
-    max-width: 1360px;
-    position: absolute;
-    right: -150px;
-    top: 50%;
-
-    transform: translateY(calc(-50% + 30px));
+    /*transform: translateX(40px);*/
 }
 
 div.investsus-content-buttons {
@@ -418,15 +425,6 @@ section#perfisDeAcesso .tipo-entidade-card strong {
     font-weight: 500;
 }
 
-.container {
-    width: 100%;
-    max-width: 1240px;
-
-    padding: 0 16px;
-
-    margin: 0 auto;
-}
-
 /*<editor-fold desc="Botões">*/
 .btn {
     background: var(--botao-gradient);
@@ -434,7 +432,7 @@ section#perfisDeAcesso .tipo-entidade-card strong {
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1rem;
     text-transform: uppercase;
 
     padding: 16px 32px;
@@ -608,7 +606,16 @@ div.popup-funcionalidades .investsus-content-buttons {
     display: block;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1360px) {
+    div.investsus-content-buttons {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
     body {
         font-size: 15px;
     }
