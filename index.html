@@ -49,24 +49,20 @@
 <main>
     <section id="investsus">
         <div class="container">
-            <div class="content-container">
-                <h1>
-                    Visualize e gerencie seus recursos financeiros do SUS
-                </h1>
-                <p>
-                    O InvestSUS é uma ferramenta que permite o acesso aos serviços, sistemas e informações no que tange a
-                    gestão do financiamento federal do SUS pelos municípios, estados, Distrito Federal e entidades públicas
-                    e privadas sem fins lucrativos.
-                </p>
-                <div class="investsus-content-buttons">
-                    <button class="btn btn-2 btn-popup" data-value="popup-video-investsus" type="button">
-                        Assistir ao Vídeo
-                    </button>
-                    <button class="btn btn-1" onclick="window.open('https://investsus.saude.gov.br/login')" type="button">
-                        Acesse Agora
-                    </button>
-                </div>
-            </div>
+            <h1>
+                Visualize e gerencie seus recursos financeiros do SUS
+            </h1>
+            <p>
+                O InvestSUS é uma ferramenta que permite o acesso aos serviços, sistemas e informações no que tange a
+                gestão do financiamento federal do SUS pelos municípios, estados, Distrito Federal e entidades públicas
+                e privadas sem fins lucrativos.
+            </p>
+            <button class="btn btn-2 btn-popup" data-value="popup-video-investsus" type="button">
+                Assistir ao Vídeo
+            </button>
+            <button class="btn btn-1" onclick="window.open('https://investsus.saude.gov.br/login')" type="button">
+                Acesse Agora
+            </button>
             <img alt="InvestSUS" id="investsus-background-img" src="assets/img/investsus_hero_background.webp">
         </div>
     </section>
@@ -75,97 +71,112 @@
         <div class="container">
             <h2>Conheça as funcionalidades do InvestSUS</h2>
             <div class="container-funcionalidades">
-                <div class="laterais">
-                    <div class="card btn-popup" data-value="popup-funcionalidades-paineis">
-                        <div class="funcionalidade-titulo-container">
-                            <img alt="Painéis" src="assets/img/paineis.svg"/>
-                            <h3>Painéis</h3>
-                        </div>
-                        <span></span>
-                        <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>
-                    </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-acessos">
-                        <div class="funcionalidade-titulo-container">
-                            <img alt="Painéis" src="assets/img/acessos.svg"/>
-                            <h3>Acessos</h3>
-                        </div>
-                        <span></span>
-                        <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de
-                            acesso.</p>
-                    </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-sistemas">
-                        <div class="funcionalidade-titulo-container">
-                            <img alt="Painéis" src="assets/img/sistemas.svg"/>
-                            <h3>Sistemas</h3>
-                        </div>
-                        <span></span>
-                        <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS.</p>
-                    </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-relatorios">
-                        <div class="funcionalidade-titulo-container">
-                            <img alt="Painéis" src="assets/img/relatorios.svg"/>
-                            <h3>Relatórios</h3>
-                        </div>
-                        <span></span>
-                        <p>Emissão de relatórios detalhados com dados sobre a entidade de forma rápida, prática,
-                            intuitiva e com poucos cliques.</p>
-                    </div>
-                </div>
-                <div class="principais">
-                    <div class="card btn-popup" data-value="popup-funcionalidades-cadastro">
+                <div class="funcionalidades">
+<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-paineis">-->
+<!--                        <img alt="Painéis" src="assets/img/paineis.svg"/>-->
+<!--                        <h3>Painéis</h3>-->
+<!--                        <p>Painéis de Informações</p>-->
+<!--                        &lt;!&ndash;                        <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-acessos">-->
+<!--                        <img alt="Painéis" src="assets/img/acessos.svg"/>-->
+<!--                        <h3>Acessos</h3>-->
+<!--                        <p>Gerenciar Acessos</p>-->
+<!--                        &lt;!&ndash;                        <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            acesso.</p>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-sistemas">-->
+<!--                        <img alt="Painéis" src="assets/img/sistemas.svg"/>-->
+<!--                        <h3>Sistemas</h3>-->
+<!--                        <p>Acesso a Sistemas.</p>-->
+<!--                        &lt;!&ndash;                        <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS.</p>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-relatorios">-->
+<!--                        <img alt="Painéis" src="assets/img/relatorios.svg"/>-->
+<!--                        <h3>Relatórios</h3>-->
+<!--                        <p>Relatório da Entidade</p>-->
+<!--                        &lt;!&ndash;                        <p>Emissão de relatórios detalhados com dados sobre a entidade de forma rápida, prática,&ndash;&gt;-->
+<!--                        &lt;!&ndash;                            intuitiva e com poucos cliques.</p>&ndash;&gt;-->
+<!--                    </div>-->
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-cadastro">
                         <img alt="Cadastro" src="assets/img/cadastro.svg"/>
                         <h3>Cadastro</h3>
                         <p>Atualização Cadastral</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-propostas">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-propostas">
                         <img alt="Propostas" src="assets/img/propostas.svg"/>
                         <h3>Propostas</h3>
                         <p>Acompanhamento de Propostas</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-saldos">
+                    <div class="seletor-funcionalidade"  data-value="funcionalidade-saldos">
                         <img alt="Saldos" src="assets/img/saldos.svg"/>
                         <h3>Saldos</h3>
                         <p>Saldos das Contas</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-repasses">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-repasses">
                         <img alt="Repasses" src="assets/img/repasses.svg"/>
                         <h3>Repasses</h3>
                         <p>Transferências de Recursos</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-recursos">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-recursos">
                         <img alt="Recursos" src="assets/img/recursos.svg"/>
                         <h3>Recursos</h3>
                         <p>Emendas / Programas</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-contas">
+                    <div class="seletor-funcionalidade"  data-value="funcionalidade-contas">
                         <img alt="Contas" src="assets/img/contas.svg"/>
                         <h3>Contas</h3>
                         <p>Domicílio Bancário</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-manutencao">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-manutencao">
                         <img alt="Manutenção" src="assets/img/manutencao.svg"/>
                         <h3>Manutenção</h3>
                         <p>Acompanhamento de Recursos</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-obras">
+                    <div class="seletor-funcionalidade"   data-value="funcionalidade-obras">
                         <img alt="Obras" src="assets/img/obras.svg"/>
                         <h3>Obras</h3>
                         <p>Acompanhamento de Recursos</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-equipamentos">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-equipamentos">
                         <img alt="Equipamentos" src="assets/img/equipamentos.svg"/>
                         <h3>Equipamentos</h3>
                         <p>Acompanhamento de Recursos</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-consignado">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-consignado">
                         <img alt="Consignado" src="assets/img/consignado.svg"/>
                         <h3>Consignado</h3>
                         <p>Acompanhamento Valor de Margem</p>
                     </div>
-                    <div class="card btn-popup" data-value="popup-funcionalidades-limites">
+                    <div class="seletor-funcionalidade" data-value="funcionalidade-limites">
                         <img alt="Limites" src="assets/img/limites.svg"/>
                         <h3>Limites</h3>
                         <p>Consultar limite PAP e MAC</p>
+                    </div>
+                </div>
+                <div class="descricao-funcionalidades">
+                    <div class="content-container">
+                        <div class="descricao-funcionalidade" id="funcionalidade-cadastro">
+                            <h3>Cadastro</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aspernatur cumque doloremque dolorum est eum facilis nesciunt non nulla optio, placeat, provident quo repudiandae sequi tempora voluptatibus? Cumque, molestias.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aspernatur cumque doloremque dolorum est eum facilis nesciunt non nulla optio, placeat, provident quo repudiandae sequi tempora voluptatibus? Cumque, molestias.
+                            </p>
+                        </div>
+
+                        <div class="funcionalidades-navegacao">
+                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.87305 12.6928C1.16235 11.9821 0.772217 11.0405 0.772217 10.0388C0.772217 9.03707 1.16235 8.09542 1.87061 7.38716L8.14088 1.15229C8.63038 0.665715 9.42189 0.667913 9.90871 1.15742C10.3955 1.64692 10.3931 2.43842 9.90358 2.925L3.63575 9.15743C3.40235 9.39107 3.27222 9.70479 3.27222 10.0388C3.27222 10.3725 3.40235 10.6865 3.63843 10.9226L9.90358 17.1523C10.3931 17.6391 10.3955 18.4306 9.90871 18.9201C9.66432 19.1657 9.34328 19.2888 9.02223 19.2888C8.70338 19.2888 8.38478 19.1677 8.14088 18.9253L1.87305 12.6928Z" fill="#CCCCCC"/>
+                                <path d="M28.6473 8.78882H8.20972C7.51929 8.78882 6.95972 9.34839 6.95972 10.0388C6.95972 10.7293 7.51929 11.2888 8.20972 11.2888H28.6473C29.3377 11.2888 29.8973 10.7293 29.8973 10.0388C29.8973 9.34839 29.3377 8.78882 28.6473 8.78882Z" fill="#CCCCCC"/>
+                            </svg>
+
+                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.4436 7.3848C29.1543 8.0955 29.5444 9.03715 29.5444 10.0389C29.5444 11.0406 29.1543 11.9822 28.446 12.6905L22.1758 18.9253C21.6863 19.4119 20.8948 19.4097 20.4079 18.9202C19.9211 18.4307 19.9236 17.6392 20.4131 17.1526L26.6809 10.9202C26.9143 10.6866 27.0444 10.3728 27.0444 10.0389C27.0444 9.70512 26.9143 9.39115 26.6782 9.15507L20.4131 2.92532C19.9236 2.4385 19.9211 1.647 20.4079 1.15749C20.6523 0.911889 20.9734 0.788842 21.2944 0.788842C21.6133 0.788842 21.9319 0.909935 22.1758 1.15237L28.4436 7.3848Z" fill="#CCCCCC"/>
+                                <path d="M1.6694 11.2888L22.1069 11.2888C22.7974 11.2888 23.3569 10.7292 23.3569 10.0388C23.3569 9.34839 22.7974 8.78881 22.1069 8.78881L1.6694 8.78881C0.978965 8.78881 0.419394 9.34839 0.419394 10.0388C0.419394 10.7292 0.978965 11.2888 1.6694 11.2888Z" fill="#CCCCCC"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,12 +193,10 @@
                 </p>
             </div>
             <div id="perfisDeAcesso-perfis-container">
-                <div class="tipo-entidade acordeon">
-                    <div class="tipo-container">
-                        <h3>
-                            Fundos Públicos de Saúde
-                        </h3>
-                    </div>
+                <div class="tipo-entidade acordeon active">
+                    <h3>
+                        Fundos Públicos de Saúde
+                    </h3>
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
@@ -258,11 +267,9 @@
                 </div>
 
                 <div class="tipo-entidade acordeon">
-                    <div class="tipo-container">
-                        <h3>
-                            Entidades Privadas Sem Fins Lucrativos
-                        </h3>
-                    </div>
+                    <h3>
+                        Entidades Privadas Sem Fins Lucrativos
+                    </h3>
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
@@ -332,11 +339,9 @@
                 </div>
 
                 <div class="tipo-entidade acordeon">
-                    <div class="tipo-container">
-                        <h3>
-                            Entidades Públicas - Federais
-                        </h3>
-                    </div>
+                    <h3>
+                        Entidades Públicas - Federais
+                    </h3>
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
@@ -406,11 +411,9 @@
                 </div>
 
                 <div class="tipo-entidade acordeon">
-                    <div class="tipo-container">
-                        <h3>
-                            Conselhos de Saúde
-                        </h3>
-                    </div>
+                    <h3>
+                        Conselhos de Saúde
+                    </h3>
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
@@ -478,11 +481,9 @@
                 </div>
 
                 <div class="tipo-entidade acordeon">
-                    <div class="tipo-container">
-                        <h3>
-                            Ministério da Saúde
-                        </h3>
-                    </div>
+                    <h3>
+                        Ministério da Saúde
+                    </h3>
 
                     <div class="perfis-container">
                         <div class="tipo-entidade-card">
@@ -563,12 +564,15 @@
                     <p>Para acessar o InvestSUS, é necessário possuir um cadastro no SCPA e um perfil de usuário
                         devidamente autorizado.</p>
                 </div>
+
                 <div class="comoAcessar-item">
                     <div class="comoAcessar-videos">
-                        <button class="btn-popup" data-value="popup-video-cadastrando-scpa" type="button">
+                        <h3>Cadastrando no SCPA</h3>
+
+                        <button class="btn-popup" data-value="https://www.youtube-nocookie.com/embed/0s7YrlQsGmM" type="button">
+                            <span>Assistir Vídeo</span>
                             <img alt="Assistir Vídeo Cadastrando no SCPA" src="assets/img/play.svg">
                         </button>
-                        <h3>Cadastrando no SCPA</h3>
                     </div>
                     <ul>
                         <li>Acesse a página <a href="https://scpa.saude.gov.br" rel="noopener noreferrer"
@@ -642,446 +646,124 @@
     </div>
 </footer>
 
-<div id="popups">
-    <div class="popup" data-value="popup-video-investsus" id="popup-video-investsus">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/0s7YrlQsGmM"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<div class="popup">
+    <div class="popup-container">
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
+                src="about:blank"
+                title="YouTube video player">
+        </iframe>
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-investsus"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://investsus.saude.gov.br/login')"
-                        type="button">
-                    Acesse Agora
-                </button>
-            </div>
+        <div class="investsus-content-buttons">
+            <button class="btn btn-2 btn-popup btn-close-popup"
+                    type="button">
+                Fechar Vídeo
+            </button>
+            <button class="btn btn-1 btn-popup" onclick="window.open('https://investsus.saude.gov.br/login')"
+                    type="button">
+                Acesse Agora
+            </button>
         </div>
     </div>
 
-    <div class="popup" data-value="popup-video-cadastrando-scpa" id="popup-video-cadastrando-scpa">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<!--    <div class="popup" data-value="popup-video-cadastrando-scpa" id="popup-video-cadastrando-scpa">-->
+<!--        <div class="popup-container">-->
+<!--            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"-->
+<!--                    data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"-->
+<!--                    src="about:blank"-->
+<!--                    title="YouTube video player">-->
+<!--            </iframe>-->
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-cadastrando-scpa"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">
-                    Cadastrar
-                </button>
-            </div>
-        </div>
-    </div>
+<!--            <div class="investsus-content-buttons">-->
+<!--                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-cadastrando-scpa"-->
+<!--                        type="button">-->
+<!--                    Fechar Vídeo-->
+<!--                </button>-->
+<!--                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">-->
+<!--                    Cadastrar-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="popup" data-value="popup-video-solicitando-perfil" id="popup-video-solicitando-perfil">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<!--    <div class="popup" data-value="popup-video-solicitando-perfil" id="popup-video-solicitando-perfil">-->
+<!--        <div class="popup-container">-->
+<!--            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"-->
+<!--                    data-src="https://www.youtube-nocookie.com/embed/DOcdkmOfICA"-->
+<!--                    src="about:blank"-->
+<!--                    title="YouTube video player">-->
+<!--            </iframe>-->
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-solicitando-perfil"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">
-                    Solicitar
-                </button>
-            </div>
-        </div>
-    </div>
+<!--            <div class="investsus-content-buttons">-->
+<!--                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-solicitando-perfil"-->
+<!--                        type="button">-->
+<!--                    Fechar Vídeo-->
+<!--                </button>-->
+<!--                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">-->
+<!--                    Solicitar-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="popup" data-value="popup-video-acessando-gov" id="popup-video-acessando-gov">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<!--    <div class="popup" data-value="popup-video-acessando-gov" id="popup-video-acessando-gov">-->
+<!--        <div class="popup-container">-->
+<!--            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"-->
+<!--                    data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"-->
+<!--                    src="about:blank"-->
+<!--                    title="YouTube video player">-->
+<!--            </iframe>-->
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-acessando-gov"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">
-                    Acessar
-                </button>
-            </div>
-        </div>
-    </div>
+<!--            <div class="investsus-content-buttons">-->
+<!--                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-acessando-gov"-->
+<!--                        type="button">-->
+<!--                    Fechar Vídeo-->
+<!--                </button>-->
+<!--                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">-->
+<!--                    Acessar-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="popup" data-value="popup-video-liberando-acessos" id="popup-video-liberando-acessos">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<!--    <div class="popup" data-value="popup-video-liberando-acessos" id="popup-video-liberando-acessos">-->
+<!--        <div class="popup-container">-->
+<!--            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"-->
+<!--                    data-src="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA"-->
+<!--                    src="about:blank"-->
+<!--                    title="YouTube video player">-->
+<!--            </iframe>-->
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-liberando-acessos"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">
-                    Acesse Agora
-                </button>
-            </div>
-        </div>
-    </div>
+<!--            <div class="investsus-content-buttons">-->
+<!--                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-liberando-acessos"-->
+<!--                        type="button">-->
+<!--                    Fechar Vídeo-->
+<!--                </button>-->
+<!--                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">-->
+<!--                    Acesse Agora-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="popup" data-value="popup-video-autorizando-perfil" id="popup-video-autorizando-perfil">
-        <div class="popup-container">
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
-                    data-src="https://www.youtube-nocookie.com/embed/G02IAJnwySI"
-                    src="about:blank"
-                    title="YouTube video player">
-            </iframe>
+<!--    <div class="popup" data-value="popup-video-autorizando-perfil" id="popup-video-autorizando-perfil">-->
+<!--        <div class="popup-container">-->
+<!--            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"-->
+<!--                    data-src="https://www.youtube-nocookie.com/embed/G02IAJnwySI"-->
+<!--                    src="about:blank"-->
+<!--                    title="YouTube video player">-->
+<!--            </iframe>-->
 
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-autorizando-perfil"
-                        type="button">
-                    Fechar Vídeo
-                </button>
-                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">
-                    Acesse Agora
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-paineis"
-         id="popup-funcionalidades-paineis">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Painéis" src="assets/img/paineis.svg"/>
-                <h3>Painéis</h3>
-            </div>
-
-            <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-paineis"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-acessos"
-         id="popup-funcionalidades-acessos">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Acessos" src="assets/img/acessos.svg"/>
-                <h3>Acessos</h3>
-            </div>
-
-            <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de acesso.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-acessos"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-sistemas"
-         id="popup-funcionalidades-sistemas">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Sistemas" src="assets/img/sistemas.svg"/>
-                <h3>Sistemas</h3>
-            </div>
-
-            <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS e o
-                acompanhamento da execução dos instrumentos de manutenção, obras e equipamentos.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-sistemas"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-relatorios"
-         id="popup-funcionalidades-relatorios">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Relatórios" src="assets/img/relatorios.svg"/>
-                <h3>Relatórios</h3>
-            </div>
-
-            <p>
-                O relatório é uma ferramenta gerencial para que os gestores possam ter acesso às informações referentes
-                aos recursos repassados aos estados e municípios, acompanhar os saldos existentes nas contas bancárias e
-                a situação dos instrumentos celebrados com o Ministério da Saúde por meio do Fundo Nacional de Saúde.
-
-                <br><br>
-                Emissão de relatórios detalhados com dados sobre a entidade, contendo as informações referentes aos
-                repasses, saldos, extratos e dados das propostas apresentadas ao Ministério da Saúde. Tudo de forma
-                rápida, prática, intuitiva e com poucos cliques.
-            </p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-relatorios"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-cadastro"
-         id="popup-funcionalidades-cadastro">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Cadastro" src="assets/img/cadastro.svg"/>
-                <h3>Cadastro</h3>
-            </div>
-
-            <p>Acesso aos dados cadastrais da entidade junto ao FNS e a atualização das informações dos Fundos Públicos
-                de Saúde por meio do SIOPS para as entidades públicas. O módulo Habilitação permite às entidades
-                privadas visualizar e encaminhar os documentos para habilitação da entidade.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-cadastro"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-propostas"
-         id="popup-funcionalidades-propostas">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Propostas" src="assets/img/propostas.svg"/>
-                <h3>Painéis</h3>
-            </div>
-
-            <p>
-                Apresentação do cadastramento de propostas e transferências voluntárias de investimentos na Rede de
-                Atenção à Saúde, bem como o acompanhamento das etapas, pareceres, informações de empenho e pagamento.
-                Além de acesso ao extrato da proposta para manutenção, obras e equipamentos.
-                <br><br>
-                Acesso as informações das propostas apresentadas ao Ministério da Saúde, para transferências voluntárias
-                de investimentos na Rede de Atenção à Saúde. Acompanhamento das etapas, pareceres, informações de
-                empenho e pagamento.
-            </p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-propostas"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-saldos"
-         id="popup-funcionalidades-saldos">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Saldos" src="assets/img/saldos.svg"/>
-                <h3>Saldos</h3>
-            </div>
-
-            <p>Apresenta informações de saldos disponíveis nas contas ativas junto ao FNS, histórico e gráfico das
-                movimentações financeiras.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-saldos"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-repasses"
-         id="popup-funcionalidades-repasses">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Repasses" src="assets/img/repasses.svg"/>
-                <h3>Repasses</h3>
-            </div>
-
-            <p>Acesso as informações dos recursos federais repassados aos Fundos Públicos de Saúde nas contas vinculadas
-                ao CNPJ da entidade, apresentando as informações por dia, mês e ano, além da identificação por
-                grupo. </p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-repasses"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-recursos"
-         id="popup-funcionalidades-recursos">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Recursos" src="assets/img/recursos.svg"/>
-                <h3>Recursos</h3>
-            </div>
-
-            <p>Apresenta informações dos recursos orçamentários de emenda ou programa disponíveis a entidade para
-                indicação de objetos e cadastro de propostas de investimentos.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-recursos"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-contas"
-         id="popup-funcionalidades-contas">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Contas" src="assets/img/contas.svg"/>
-                <h3>Contas</h3>
-            </div>
-
-            <p>Acesso as informações dos domicílios bancários da entidade vinculados ao Fundo Nacional de Saúde, como
-                nome da agência, descrição da conta e saldo disponível. </p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-contas"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-manutencao"
-         id="popup-funcionalidades-manutencao">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Manutenção" src="assets/img/manutencao.svg"/>
-                <h3>Manutenção</h3>
-            </div>
-
-            <p>Apresenta as informações das propostas para manutenção e custeio, formalizadas por meio de Portaria ou
-                Convênio, permite visualizar o extrato da proposta, acessar o instrumento, informações de empenho e
-                pagamento. </p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-manutencao"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-obras" id="popup-funcionalidades-obras">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Obras" src="assets/img/obras.svg"/>
-                <h3>Obras</h3>
-            </div>
-
-            <p>Apresenta as informações das propostas para obras em unidades de saúde, formalizadas por meio de Portaria
-                ou Convênio, permite visualizar o extrato da proposta, acessar o instrumento, informações de empenho e
-                pagamento.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-obras"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-equipamentos"
-         id="popup-funcionalidades-equipamentos">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Equipamentos" src="assets/img/equipamentos.svg"/>
-                <h3>Equipamentos</h3>
-            </div>
-
-            <p>Apresenta as informações das propostas para aquisição de equipamentos e materiais permanentes,
-                formalizadas por meio Portaria ou Convênio, permite visualizar o extrato da proposta, acessar o
-                instrumento, informações de empenho e pagamento, além da verificação dos equipamentos contemplados por
-                tipo, estabelecimento e proposta.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-equipamentos"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-consignado"
-         id="popup-funcionalidades-consignado">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Consignado" src="assets/img/consignado.svg"/>
-                <h3>Consignado</h3>
-            </div>
-
-            <p>Permite as entidades privadas ter acesso ao processo de solicitação de empréstimo consignado, consultas
-                sobre margem, agilidade no processo com autenticação do Ministério da Saúde e solicitação de crédito às
-                instituições financeiras.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-consignado"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup popup-funcionalidades" data-value="popup-funcionalidades-limites"
-         id="popup-funcionalidades-limites">
-        <div class="popup-container">
-            <div class="funcionalidade-titulo-container">
-                <img alt="Limites" src="assets/img/limites.svg"/>
-                <h3>Limites</h3>
-            </div>
-
-            <p>Apresenta informações sobre os limites PAP (Programa da atenção Primária) e MAC (Média e Alta
-                Complexidade) disponíveis a serem indicados.</p>
-
-            <div class="investsus-content-buttons">
-                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-funcionalidades-limites"
-                        type="button">
-                    Fechar
-                </button>
-            </div>
-        </div>
-    </div>
+<!--            <div class="investsus-content-buttons">-->
+<!--                <button class="btn btn-2 btn-popup btn-close-popup popup" data-value="popup-video-autorizando-perfil"-->
+<!--                        type="button">-->
+<!--                    Fechar Vídeo-->
+<!--                </button>-->
+<!--                <button class="btn btn-1 btn-popup" onclick="window.open('https://scpa.saude.gov.br')" type="button">-->
+<!--                    Acesse Agora-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 
 <a href="#investsus">

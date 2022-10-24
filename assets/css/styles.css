@@ -57,7 +57,7 @@ HTML {
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: var(--black-00);
     color: var(--black-09);
 
     font-family: var(--text-font);
@@ -94,6 +94,7 @@ img {
     margin: 0 auto;
 }
 
+/*<editor-fold desc="header">*/
 header#main {
     background-color: var(--black-00);
 
@@ -163,24 +164,30 @@ header#main li a:hover:after,  header#main li a.active-menu:after{
 header#main img.action-menu {
     display: none;
 }
+/*</editor-fold>*/
 
 main section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
+/*<editor-fold desc="section-investsus">*/
 section#investsus {
     min-height: 100vh;
-    background: linear-gradient(#168CE0 50.62%, rgba(43, 169, 247, 0) 97%);
+    background: linear-gradient(#168CE0 60%, #F7F7F7);
 }
 
 section#investsus .container {
     max-width: 1440px;
-    height: calc(100vh - 160px);
+    min-height: calc(100vh - 120px);
     color: var(--black-00);
 
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-areas:
+        "titulo titulo img img img img img img"
+        "texto texto img img img img img img"
+        "btn-2 btn-1 img img img img img img";
     align-items: center;
+    place-content: center;
     gap: 24px;
 }
 
@@ -191,40 +198,153 @@ section#investsus .content-container {
 }
 
 section#investsus h1 {
+    grid-area: titulo;
     color: inherit;
 }
 
 section#investsus p {
+    grid-area: texto;
     font-size: 1.2em;
 }
 
+section#investsus .btn-1 {
+    grid-area: btn-1;
+}
+
+
+section#investsus .btn-2 {
+    grid-area: btn-2;
+}
 
 section#investsus img#investsus-background-img {
     width: 100%;
-    min-width: 630px;
+    grid-area: img;
     /*transform: translateX(40px);*/
 }
+/*</editor-fold>*/
 
-div.investsus-content-buttons {
+/*<editor-fold desc="section-funcionalidades">*/
+section#funcionalidades {
+    background-color: var(--black-01);
+}
+
+section#funcionalidades h2 {
+    margin-bottom: 60px;
+}
+
+section#funcionalidades div.container-funcionalidades {
+    background-color: var(--black-00);
+
+    width: 100%;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
 }
 
-section#funcionalidades .container {
+section#funcionalidades div.funcionalidades {
+    padding: 24px;
+
     display: grid;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.25);
 }
 
-.funcionalidade-titulo-container {
+section#funcionalidades div.seletor-funcionalidade {
+    padding: 12px;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
+
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
 }
 
-.funcionalidade-titulo-container img, .funcionalidade-titulo-container h3{
-    display: inline-block;
+section#funcionalidades div.seletor-funcionalidade.ativa, section#funcionalidades div.seletor-funcionalidade:hover {
+    box-shadow: var(--shadow-01);
 }
+
+section#funcionalidades div.seletor-funcionalidade img {
+    width: 32px;
+    height: 32px;
+}
+
+section#funcionalidades div.seletor-funcionalidade p {
+    color: var(--black-05);
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+section#funcionalidades div.descricao-funcionalidades {
+    padding: 24px;
+    height: 100%;
+}
+
+section#funcionalidades div.descricao-funcionalidades div.content-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+section#funcionalidades div.descricao-funcionalidades h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 40px;
+
+    position: relative;
+
+}
+
+section#funcionalidades div.descricao-funcionalidades h3:before {
+    background-color: var(--primary-03-acent);
+    content: '';
+
+    width: 8px;
+    height: 50px;
+
+    position: absolute;
+    left: -24px;
+
+    display: block;
+
+    top: -10px;
+}
+
+section#funcionalidades div.descricao-funcionalidades p {
+    text-indent: 36px;
+}
+
+section#funcionalidades div.descricao-funcionalidades p:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+
+section#funcionalidades div.funcionalidades-navegacao {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+}
+
+section#funcionalidades div.funcionalidades-navegacao svg {
+    cursor: pointer;
+}
+
+section#funcionalidades div.funcionalidades-navegacao svg:hover path, section#funcionalidades div.funcionalidades-navegacao svg.active path {
+    fill: var(--primary-03-acent);
+}
+/*</editor-fold>*/
+
+
 
 section#comoAcessar {
     min-height: 100vh;
@@ -234,13 +354,12 @@ section#comoAcessar {
 
 section#comoAcessar .container {
     display: flex;
-    justify-content: flex-end;
 }
 
 section#comoAcessar div#comoAcessar-content {
     background-color: var(--black-00);
 
-    width: 680px;
+    width: 100%;
 
     padding: 32px;
 
@@ -326,7 +445,6 @@ section#perfisDeAcesso .tipo-entidade {
     background-color: var(--black-00);
 
     display: grid;
-    gap: 28px;
 
     border-radius: var(--border-radius);
 }
@@ -341,6 +459,8 @@ section#perfisDeAcesso .tipo-entidade h3 {
     cursor: pointer;
 
     scroll-margin: 80px;
+
+    box-shadow: var(--shadow-01);
 }
 
 section#perfisDeAcesso .tipo-entidade h3:before {
@@ -373,35 +493,41 @@ section#perfisDeAcesso .tipo-entidade h3:after {
     right: 24px;
 }
 
-section#perfisDeAcesso .tipo-entidade h3.active:after {
+section#perfisDeAcesso .tipo-entidade.active h3:after {
     content: '-';
 }
 
 section#perfisDeAcesso .perfis-container {
-    padding: 0 48px 12px;
+    background-color: var(--black-01);
+    padding: 24px;
 
     display: none;
     gap: 24px;
+
+    border-radius: 0 0 8px 8px;
 }
 
-section#perfisDeAcesso .perfis-container.active {
+section#perfisDeAcesso .tipo-entidade.active h3 {
+    border-radius: 0 8px 0 0;
+}
+
+section#perfisDeAcesso .tipo-entidade.active .perfis-container {
     display: grid;
+
+    box-shadow: var(--shadow-01);
 }
 
 section#perfisDeAcesso .tipo-entidade-card {
+    background-color: var(--black-00);
+
+    padding: 24px;
+
     display: grid;
     gap: 8px;
+
+    border-radius: var(--border-radius);
 }
 
-section#perfisDeAcesso .tipo-entidade-card:not(:last-child):after {
-    content: '';
-    display: block;
-
-    background-color: var(--black-01);
-
-    width: 100%;
-    height: 1px;
-}
 
 section#perfisDeAcesso .tipo-entidade-card span{
     background: var(--span-gradient);
@@ -435,7 +561,7 @@ section#perfisDeAcesso .tipo-entidade-card strong {
     font-size: 1rem;
     text-transform: uppercase;
 
-    padding: 16px 32px;
+    padding: 16px 22px;
 
     border: none;
     border-radius: var(--border-radius);
@@ -462,64 +588,7 @@ section#perfisDeAcesso .tipo-entidade-card strong {
 /*</editor-fold>*/
 
 /*<editor-fold desc="Funcionalidades Cards">*/
-.container-funcionalidades, .container-funcionalidades .laterais, .container-funcionalidades .principais {
-    display: grid;
-    gap: 24px;
-}
 
-.container-funcionalidades {
-    grid-template-columns: 1fr 2fr;
-}
-
-.container-funcionalidades .principais {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.card {
-    background-color: var(--black-00);
-
-    padding: 24px;
-    display: grid;
-    gap: 8px;
-
-    border-radius: var(--border-radius);
-}
-
-.card:hover {
-    cursor: pointer;
-    box-shadow: var(--shadow-02);
-}
-
-.card span {
-    background: var(--span-gradient);
-
-    width: 50px;
-    height: 4px;
-
-    display: block;
-}
-
-.container-funcionalidades .principais .card {
-    place-items: center;
-    gap: 4px;
-}
-
-.container-funcionalidades .principais .card p, .container-funcionalidades .principais .card h3 {
-    text-align: center;
-}
-
-.container-funcionalidades .principais .card p {
-    font-size: .9em;
-}
-
-.card-icon {
-    fill: var(--primary-03);
-}
-
-.card-icon {
-    fill: var(--primary-03);
-}
 /*</editor-fold>*/
 
 footer {
@@ -606,13 +675,32 @@ div.popup-funcionalidades .investsus-content-buttons {
     display: block;
 }
 
-@media screen and (max-width: 1360px) {
-    div.investsus-content-buttons {
+img#scroll-up {
+    width: 60px;
+
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+    box-shadow: var(--shadow-01);
+}
+
+img#scroll-up:hover {
+    box-shadow: var(--shadow-02);
+}
+
+@media screen and (max-width: 1170px) {
+
+    section#investsus .container {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: auto;
-        gap: 24px;
+        grid-template-areas:
+        "titulo titulo titulo titulo titulo titulo titulo titulo"
+        "texto texto img img img img img img"
+        "btn-2 btn-1 img img img img img img";
     }
+
 }
 
 @media screen and (max-width: 1025px) {
@@ -620,20 +708,13 @@ div.popup-funcionalidades .investsus-content-buttons {
         font-size: 15px;
     }
 
-    section#investsus .container img#investsus-background-img {
-        width: 100%;
-        min-width: 280px;
-
-        grid-row: 1 / 3;
-        justify-self: center;
-
-        position: static;
-
-        transform: translateY(0);
-    }
-
-    section#investsus .container p, section#investsus .container h1, section#investsus .container .investsus-content-buttons{
-        width: 100%;
+    section#investsus .container {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo titulo titulo titulo titulo titulo"
+        "texto texto img img img img img img"
+        "btn-2 btn-2 img img img img img img"
+        "btn-1 btn-1 img img img img img img";
     }
 
     section#funcionalidades .container-funcionalidades {
@@ -657,20 +738,21 @@ div.popup-funcionalidades .investsus-content-buttons {
     }
 }
 
-img#scroll-up {
-    width: 60px;
+@media screen and (max-width: 860px) {
+    section#investsus .container {
+        grid-template-areas:
+        "titulo titulo"
+        "img img"
+        "texto texto"
+        "btn-2 btn-1 ";
+    }
 
-    border-radius: 50%;
-
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-
-    box-shadow: var(--shadow-01);
-}
-
-img#scroll-up:hover {
-    box-shadow: var(--shadow-02);
+    div.investsus-content-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 24px;
+    }
 }
 
 @media screen and (max-width: 680px) {
