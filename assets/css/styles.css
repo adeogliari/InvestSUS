@@ -38,6 +38,7 @@
     --shadow-02-invert: -2px 2px 8px rgba(0, 0, 0, 0.25);
 
     --span-gradient: linear-gradient(80deg, #168CE0 0%, rgba(43, 169, 247, 0) 97%);
+
     --botao-gradient: linear-gradient(0deg, #168CE0 0%, #3DC5FF 100%);
 
     --border-radius: 8px;
@@ -128,9 +129,9 @@ header#main ul {
 }
 
 header#main li a {
-    color: var(--primary-06);
+    color: var(--black-08);
     font-family: var(--title-font);
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
 
     position: relative;
@@ -167,7 +168,7 @@ header#main img.action-menu {
 /*</editor-fold>*/
 
 main section {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 /*<editor-fold desc="section-investsus">*/
@@ -178,7 +179,7 @@ section#investsus {
 
 section#investsus .container {
     max-width: 1440px;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 160px);
     color: var(--black-00);
 
     display: grid;
@@ -344,91 +345,10 @@ section#funcionalidades div.funcionalidades-navegacao svg:hover path, section#fu
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="section-perfisDeAcesso">*/
 
-
-section#comoAcessar {
-    min-height: 100vh;
-    background: url("../img/investsus_computer_background.webp") center no-repeat;
-    background-size: cover;
-}
-
-section#comoAcessar .container {
-    display: flex;
-}
-
-section#comoAcessar div#comoAcessar-content {
-    background-color: var(--black-00);
-
-    width: 100%;
-
-    padding: 32px;
-
-    border-radius: var(--border-radius);
-
-    display: grid;
-    gap: 18px;
-
-    box-shadow: var(--shadow-01);
-}
-
-div.comoAcessar-item a {
-    color: var(--primary-06);
-    font-weight: 500;
-}
-
-section#comoAcessar div.comoAcessar-title h2 {
-    position: relative;
-}
-
-section#comoAcessar div.comoAcessar-title h2:before {
-    content: '';
-
-    background-color: var(--primary-03-acent);
-
-    display: block;
-    width: 10px;
-    height: 50px;
-
-    position: absolute;
-    left: -35px;
-}
-
-section#comoAcessar div.comoAcessar-title p {
-    margin-top: 8px;
-}
-
-section#comoAcessar .comoAcessar-videos {
-    margin-bottom: 8px;
-    display: flex;
-
-    place-items: center;
-    gap: 8px;
-}
-
-section#comoAcessar .comoAcessar-videos button {
-    background-color: transparent;
-    border: none;
-}
-
-section#comoAcessar .comoAcessar-videos h3 {
-    line-height: 25px;
-}
-
-section#comoAcessar ul {
-    margin-left: 48px;
-}
-
-section#comoAcessar li {
-    margin: 2px 0;
-}
-
-section#comoAcessar .comoAcessar-item p {
-    margin-left: 28px;
-}
-
-section#perfisDeAcesso .container {
-    display: grid;
-    gap: 24px;
+section#perfisDeAcesso div#perfisDeAcesso-title {
+    margin-bottom: 24px;
 }
 
 section#perfisDeAcesso div#perfisDeAcesso-title p {
@@ -550,18 +470,214 @@ section#perfisDeAcesso .tipo-entidade-card strong {
     color: var(--primary-06);
     font-weight: 500;
 }
+/*</editor-fold>*/
+
+/*<editor-fold desc="section-comoAcessar">*/
+section#comoAcessar {
+    min-height: 100vh;
+    background: url("../img/investsus_computer_background.webp") center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    place-content: center;
+}
+
+section#comoAcessar div#comoAcessar-content {
+    background-color: var(--black-00);
+
+    width: 100%;
+    max-width: 1240px;
+
+    padding: 24px;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow-01);
+}
+
+section#comoAcessar div.comoAcessar-title {
+    margin-bottom: 24px;
+}
+
+section#comoAcessar div.comoAcessar-title h2 {
+    line-height: 1.3;
+    position: relative;
+    margin: 0 0 24px 32px;
+}
+
+section#comoAcessar div.comoAcessar-title h2:before {
+    content: '';
+
+    background-color: var(--primary-03-acent);
+
+    display: block;
+    width: 8px;
+    height: 100%;
+
+    position: absolute;
+    left: -32px;
+}
+
+section#comoAcessar div.comoAcessar-title p {
+    margin-top: 8px;
+}
+
+
+section#comoAcessar .comoAcessar-itens-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+section#comoAcessar .comoAcessar-item {
+    background-color: var(--black-01);
+
+    padding: 24px;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-01);
+
+}
+
+section#comoAcessar .comoAcessar-item-header {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    place-items: center;
+    gap: 8px;
+}
+
+section#comoAcessar .comoAcessar-item-header h3 {
+    font-size: 1.6rem;
+}
+
+section#comoAcessar .comoAcessar-item-header button {
+    background: var(--botao-gradient);
+    color: var(--black-00);
+
+    padding: 12px;
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    box-shadow: var(--shadow-01);
+
+    cursor: pointer;
+}
+
+/*section#comoAcessar .comoAcessar-item-header button span {*/
+/*    font-family: var(--title-font);*/
+/*    font-weight: 500;*/
+/*    text-transform: uppercase;*/
+/*    letter-spacing: 0.05em;*/
+/*}*/
+
+section#comoAcessar .comoAcessar-item ul {
+    margin-left: 24px;
+}
+
+section#comoAcessar .comoAcessar-item li {
+    margin: 4px 0;
+}
+
+div.comoAcessar-item a {
+    color: var(--primary-06);
+    font-weight: 500;
+}
+
+section#comoAcessar .comoAcessar-item p {
+    margin-left: 28px;
+}
+
+section#comoAcessar .comoAcessar-item a {
+    font-weight: bold;
+}
+
+section#comoAcessar .comoAcessar-item a:hover {
+    color: var(--primary-04);
+}
+/*</editor-fold>*/
+
+footer#faleConosco {
+    padding: 60px 0;
+}
+
+footer#faleConosco div.container {
+    display: grid;
+    grid-template-areas:
+            "navegue links-uteis fale-conosco"
+            "rodape rodape rodape";
+    gap: 24px;
+    justify-content: space-between;
+}
+
+footer#faleConosco div.container div:nth-child(1) {
+    grid-area: navegue;
+}
+
+footer#faleConosco div.container div:nth-child(2) {
+    grid-area: links-uteis;
+}
+
+footer#faleConosco div.container div:nth-child(3) {
+    grid-area: fale-conosco;
+}
+
+footer#faleConosco div.container div:nth-child(4) {
+    grid-area: rodape;
+}
+
+footer#faleConosco div.container div:nth-child(4) img {
+    width: 100%;
+    max-width: 304px;
+    margin: 0 auto;
+}
+
+footer#faleConosco div.container div h3 {
+    margin-bottom: 12px;
+}
+
+footer#faleConosco div.container div ul {
+    margin-left: 24px;
+}
+
+footer#faleConosco div.container div ul li {
+    margin: 8px 0;
+}
+
+footer#faleConosco div.container div ul a {
+    font-weight: 500;
+    color: var(--black-08);
+}
+
+footer#faleConosco div.container div ul a:hover {
+    color: var(--primary-04);
+}
+
+footer#faleConosco > img {
+    width: 250px;
+    margin: 0 auto;
+}
+
 
 /*<editor-fold desc="Botões">*/
 .btn {
     background: var(--botao-gradient);
     color: var(--black-00);
 
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--title-font);
     font-weight: 500;
     font-size: 1rem;
+    letter-spacing: 0.05rem;
     text-transform: uppercase;
 
-    padding: 16px 22px;
+    padding: 16px;
 
     border: none;
     border-radius: var(--border-radius);
@@ -591,16 +707,7 @@ section#perfisDeAcesso .tipo-entidade-card strong {
 
 /*</editor-fold>*/
 
-footer {
-    background-color: var(--black-00);;
-    width: 100%;
-}
-
-footer img {
-    width: 100%;
-
-}
-
+/*<editor-fold desc="popup-videos">*/
 div.popup {
     background-color: rgba(0, 0, 0, .2);
     width: 100vw;
@@ -674,9 +781,10 @@ div.popup-funcionalidades .popup-container p{
 div.popup-funcionalidades .investsus-content-buttons {
     display: block;
 }
+/*</editor-fold>*/
 
 img#scroll-up {
-    width: 60px;
+    width: 45px;
 
     border-radius: 50%;
 
@@ -747,11 +855,33 @@ img#scroll-up:hover {
         "btn-2 btn-1 ";
     }
 
+    footer#faleConosco div.container {
+        grid-template-areas:
+            "navegue links-uteis"
+            "fale-conosco fale-conosco"
+            "rodape rodape";
+    }
+
     div.investsus-content-buttons {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 24px;
+    }
+
+    section#funcionalidades div.funcionalidades {
+        max-height: calc(100vh - 160px);
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.25);
+
+        overflow-y: auto;
+    }
+
+    section#comoAcessar .comoAcessar-itens-container {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -760,8 +890,13 @@ img#scroll-up:hover {
         font-size: 2.3em;
     }
 
-    section#funcionalidades .container-funcionalidades .principais {
-        grid-template-columns: 1fr 1fr;
+    section#investsus .container {
+        grid-template-areas:
+        "titulo"
+        "img"
+        "texto"
+        "btn-2"
+        "btn-1";
     }
 
     section#comoAcessar div#comoAcessar-content {
@@ -829,28 +964,37 @@ img#scroll-up:hover {
         width: 45px;
     }
 
-    div.popup-funcionalidades .popup-container {
-        height: 100vh;
+    section#funcionalidades div.container-funcionalidades {
+        grid-template-columns: 2fr 3fr;
     }
 
-    div.popup-funcionalidades .popup-container p {
-        overflow-y: auto;
+    section#funcionalidades div.funcionalidades {
+        grid-template-columns: 1fr;
+
+        box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.25);
+        padding: 12px;
+
+        overflow-x: hidden;
     }
 }
 
-@media screen and (max-width: 420px) {
-    section#funcionalidades .container-funcionalidades .principais {
-        gap: 12px;
-    }
-
-    section#funcionalidades .container-funcionalidades .principais .card {
-        padding: 10px;
-
-    }
-
-
-    section#investsus div.investsus-content-buttons {
+@media screen and (max-width: 460px) {
+    section#funcionalidades div.container-funcionalidades {
         grid-template-columns: 1fr;
+    }
+
+    section#funcionalidades div.funcionalidades {
+        max-height: 100%;
+        grid-template-columns: 1fr 1fr;
+        overflow-y: unset;
+
+        box-shadow: none;
+
+        padding: 24px;
+    }
+
+    section#funcionalidades div.descricao-funcionalidades {
+        display: none;
     }
 
     div.popup-container {
