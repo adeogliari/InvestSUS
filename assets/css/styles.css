@@ -1003,6 +1003,16 @@ img#scroll-up:hover {
 }
 
 @media screen and (max-width: 460px) {
+    div.popup .btn {
+        padding: 12px;
+
+        font-size: .9rem;
+    }
+
+    div.investsus-content-buttons {
+        gap: 12px;
+    }
+
     section#funcionalidades div.container-funcionalidades {
         grid-template-columns: 1fr;
     }
