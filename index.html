@@ -35,13 +35,13 @@
             <img alt="InvestSUS" src="assets/img/investSUS.svg">
         </a>
         <ul>
-            <li><img alt="InvestSUS" class="action-menu" src="assets/img/investSUS.svg"></li>
+            <li><a class="action-menu" href="#investsus">InvestSUS</a></li>
             <li><a class="action-menu" href="#funcionalidades">Funcionalidades</a></li>
             <li><a class="action-menu" href="#perfisDeAcesso">Perfis de Acesso</a></li>
             <li><a class="action-menu" href="#comoAcessar">Como Acessar</a></li>
             <li><a class="action-menu" href="#faleConosco">Fale Conosco</a></li>
         </ul>
-        <img alt="Menu" class="action-menu menu" src="assets/img/menu_icon.svg">
+        <img alt="Menu" class="btn_menu" src="assets/img/menu_icon.svg">
     </nav>
 </header>
 
@@ -56,7 +56,7 @@
                 gestão do financiamento federal do SUS pelos municípios, estados, Distrito Federal e entidades públicas
                 e privadas sem fins lucrativos.
             </p>
-            <button class="btn btn-2 btn-popup" data-value="popup-video-investsus" type="button">
+            <button class="btn btn-2 btn_openPopup" data-value="https://www.youtube.com/embed/0s7YrlQsGmM" type="button">
                 Assistir ao Vídeo
             </button>
             <button class="btn btn-1" onclick="window.open('https://investsus.saude.gov.br/login')" type="button">
@@ -568,7 +568,7 @@
                     <div class="comoAcessar-item-header">
                         <h3>Cadastrando no SCPA</h3>
 
-                        <button class="btn-popup" data-value="https://www.youtube-nocookie.com/embed/0s7YrlQsGmM" type="button">
+                        <button class="btn_openPopup" data-value="https://www.youtube-nocookie.com/embed/DOcdkmOfICA" type="button">
                             <img alt="Assistir Vídeo Cadastrando no SCPA" src="assets/img/play.svg">
                         </button>
                     </div>
@@ -587,7 +587,7 @@
                     <div class="comoAcessar-item-header">
                         <h3>Solicitando perfil no SCPA</h3>
 
-                        <button class="btn-popup" data-value="https://www.youtube-nocookie.com/embed/DOcdkmOfICA" type="button">
+                        <button class="btn_openPopup" data-value="https://www.youtube-nocookie.com/embed/DOcdkmOfICA" type="button">
                             <img alt="Assistir Vídeo Cadastrando no SCPA" src="assets/img/play.svg">
                         </button>
                     </div>
@@ -607,7 +607,7 @@
                     <div class="comoAcessar-item-header">
                         <h3>Autorizando perfil no SCPA</h3>
 
-                        <button class="btn-popup" data-value="popup-video-autorizando-perfil" type="button">
+                        <button class="btn_openPopup" data-value="https://www.youtube-nocookie.com/embed/G02IAJnwySI" type="button">
                             <img alt="Assistir Vídeo Cadastrando no SCPA" src="assets/img/play.svg">
                         </button>
                     </div>
@@ -629,7 +629,7 @@
                     <div class="comoAcessar-item-header">
                         <h3>Acessando com gov.br</h3>
 
-                        <button class="btn-popup" data-value="popup-video-acessando-gov" type="button">
+                        <button class="btn_openPopup" data-value="https://www.youtube-nocookie.com/embed/P9Rl-G8dTMA" type="button">
                             <img alt="Assistir Vídeo Acessando com gov.br" src="assets/img/play.svg">
                         </button>
                     </div>
@@ -681,18 +681,18 @@
 </footer>
 
 <div class="popup">
-    <div class="popup-container">
+    <div class="popup-video-container">
         <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="popup-video"
                 src="about:blank"
                 title="YouTube video player">
         </iframe>
 
         <div class="investsus-content-buttons">
-            <button class="btn btn-2 btn-popup btn-close-popup"
+            <button class="btn btn-2 btn_closePopup"
                     type="button">
                 Fechar Vídeo
             </button>
-            <button class="btn btn-1 btn-popup" onclick="window.open('https://investsus.saude.gov.br/login')"
+            <button class="btn btn-1" onclick="window.open('https://investsus.saude.gov.br/login')"
                     type="button">
                 Acesse Agora
             </button>
