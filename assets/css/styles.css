@@ -1015,6 +1015,8 @@ img#scroll-up:hover {
 
     section#funcionalidades div.container-funcionalidades {
         grid-template-columns: 1fr;
+
+        border-radius: var(--border-radius);
     }
 
     section#funcionalidades div.funcionalidades {
@@ -1024,7 +1026,7 @@ img#scroll-up:hover {
 
         box-shadow: none;
 
-        padding: 24px;
+        padding: 8px;
     }
 
     section#funcionalidades div.descricao-funcionalidades {
