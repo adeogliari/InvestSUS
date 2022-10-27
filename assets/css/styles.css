@@ -131,11 +131,6 @@ header#main nav div.menu_container {
     opacity: 1;
 }
 
-header#main nav div.menu_container.active {
-    display: block;
-    opacity: 1;
-}
-
 header#main ul {
     display: flex;
     list-style: none;
@@ -1014,18 +1009,6 @@ img#scroll-up:hover {
 
         overflow-x: hidden;
     }
-}
-
-@media screen and (max-width: 460px) {
-    div.popup .btn {
-        padding: 12px;
-
-        font-size: .9rem;
-    }
-
-    div.investsus-content-buttons {
-        gap: 12px;
-    }
 
     section#funcionalidades div.container-funcionalidades {
         grid-template-columns: 1fr;
@@ -1055,7 +1038,7 @@ img#scroll-up:hover {
         position: absolute;
         top: 0;
 
-
+        padding-bottom: 60px;
     }
 
     section#funcionalidades div.descricao-funcionalidades div.content-container img#close_desc_funcionalidade {
@@ -1069,13 +1052,17 @@ img#scroll-up:hover {
 
         z-index: 9;
     }
+}
 
-    section#funcionalidades div.descricao-funcionalidades div.content-container {
-        justify-content: start;
+@media screen and (max-width: 460px) {
+    div.popup .btn {
+        padding: 12px;
+
+        font-size: .9rem;
     }
 
-    section#funcionalidades div.descricao-funcionalidade {
-        margin-bottom: 60px;
+    div.investsus-content-buttons {
+        gap: 12px;
     }
 
     div.popup-video-container {

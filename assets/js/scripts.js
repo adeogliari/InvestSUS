@@ -49,8 +49,6 @@ function toggleMenu() {
 
     menu.addEventListener('click', () => {
         menu.previousElementSibling.classList.toggle('active');
-
-        document.querySelector('.menu_overlay').classList.toggle('active');
     })
 }
 
@@ -74,6 +72,8 @@ function activeMenu() {
             })
 
             item.classList.add('active')
+            item.parentElement.parentElement.classList.remove('active')
+
         })
     })
 }
