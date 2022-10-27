@@ -588,13 +588,6 @@ section#comoAcessar .comoAcessar-item-header button {
     cursor: pointer;
 }
 
-/*section#comoAcessar .comoAcessar-item-header button span {*/
-/*    font-family: var(--title-font);*/
-/*    font-weight: 500;*/
-/*    text-transform: uppercase;*/
-/*    letter-spacing: 0.05em;*/
-/*}*/
-
 section#comoAcessar .comoAcessar-item ul {
     margin-left: 24px;
 }
@@ -960,9 +953,13 @@ img#scroll-up:hover {
     header#main ul li {
         font-size: 1.1rem;
 
-        padding: 12px 0;
-
         border-bottom: 2px solid var(--black-01);
+    }
+
+    header#main li a {
+        display: block;
+
+        padding: 12px 0;
     }
 
     header#main img.btn_menu {
