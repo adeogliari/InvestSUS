@@ -78,7 +78,7 @@ function activeMenu() {
     })
 }
 
-function openFuncionalidade() {
+function openDescricaoFuncionalidade() {
     const seletorFuncionalidade = document.querySelectorAll('.seletor-funcionalidade')
     const desc_funcionalidades = document.querySelectorAll('.descricao-funcionalidade')
     const btn_prevFunc = document.querySelector('#prev-func')
@@ -93,6 +93,7 @@ function openFuncionalidade() {
             item.classList.remove('active')
         })
 
+       desc_funcionalidades[index].parentElement.parentElement.classList.add('active')
         seletorFuncionalidade[index].classList.add('active')
         desc_funcionalidades[index].classList.add('active')
         btn_prevFunc.setAttribute('data-value', index)
@@ -144,9 +145,18 @@ function openFuncionalidade() {
     })
 }
 
+function closeDescricaoFuncionalidade() {
+    const btn_close = document.querySelector('#close_desc_funcionalidade')
+
+    btn_close.addEventListener('click', () => {
+        document.querySelector('.descricao-funcionalidades').classList.remove('active')
+    })
+}
+
 popups()
 toggleAcordeons()
 toggleMenu()
 navigateMenu()
 activeMenu()
-openFuncionalidade()
+openDescricaoFuncionalidade()
+closeDescricaoFuncionalidade()

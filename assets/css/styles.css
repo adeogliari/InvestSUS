@@ -257,6 +257,8 @@ section#funcionalidades div.container-funcionalidades {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    position: relative;
 }
 
 section#funcionalidades div.funcionalidades {
@@ -310,6 +312,10 @@ section#funcionalidades div.descricao-funcionalidades div.content-container {
     flex-direction: column;
 
     justify-content: space-between;
+}
+
+section#funcionalidades div.descricao-funcionalidades div.content-container img#close_desc_funcionalidade {
+    display: none;
 }
 
 section#funcionalidades div.descricao-funcionalidades h3 {
@@ -624,6 +630,7 @@ section#comoAcessar .comoAcessar-item a:hover {
 }
 /*</editor-fold>*/
 
+/*<editor-fold desc="Footer">*/
 footer#faleConosco {
     padding: 60px 0;
 }
@@ -684,7 +691,7 @@ footer#faleConosco > img {
     width: 250px;
     margin: 0 auto;
 }
-
+/*</editor-fold>*/
 
 /*<editor-fold desc="Botões">*/
 .btn {
@@ -1038,6 +1045,37 @@ img#scroll-up:hover {
 
     section#funcionalidades div.descricao-funcionalidades {
         display: none;
+    }
+
+    section#funcionalidades div.descricao-funcionalidades.active {
+        background-color: var(--black-00);
+
+        display: block;
+
+        position: absolute;
+        top: 0;
+
+
+    }
+
+    section#funcionalidades div.descricao-funcionalidades div.content-container img#close_desc_funcionalidade {
+        width: 24px;
+
+        display: block;
+
+        position: absolute;
+        right: 24px;
+        top: 28px;
+
+        z-index: 9;
+    }
+
+    section#funcionalidades div.descricao-funcionalidades div.content-container {
+        justify-content: start;
+    }
+
+    section#funcionalidades div.descricao-funcionalidade {
+        margin-bottom: 60px;
     }
 
     div.popup-video-container {
