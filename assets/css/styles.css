@@ -157,11 +157,11 @@ header#main li a:after {
     width: 0;
 }
 
-header#main li a:hover {
+header#main li a:hover, header#main li a.active {
     color: var(--primary-04);
 }
 
-header#main li a:hover:after,  header#main li a.active-menu:after{
+header#main li a.active:after{
     background-color: var(--primary-04);
 
     content: '';
@@ -182,7 +182,10 @@ header#main img.btn_menu {
 /*</editor-fold>*/
 
 main section {
+    min-height: 100vh;
     padding: 80px 0;
+    display: flex;
+    align-items: center;
 }
 
 /*<editor-fold desc="section-investsus">*/
@@ -279,7 +282,7 @@ section#funcionalidades div.seletor-funcionalidade {
     cursor: pointer;
 }
 
-section#funcionalidades div.seletor-funcionalidade.ativa, section#funcionalidades div.seletor-funcionalidade:hover {
+section#funcionalidades div.seletor-funcionalidade.active, section#funcionalidades div.seletor-funcionalidade:hover {
     box-shadow: var(--shadow-01);
 }
 
@@ -341,6 +344,13 @@ section#funcionalidades div.descricao-funcionalidades p:not(:last-of-type) {
     margin-bottom: 12px;
 }
 
+section#funcionalidades div.descricao-funcionalidade {
+    display: none;
+}
+
+section#funcionalidades div.descricao-funcionalidade.active {
+    display: block;
+}
 
 section#funcionalidades div.funcionalidades-navegacao {
     width: 100%;

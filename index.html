@@ -35,11 +35,11 @@
             <img alt="InvestSUS" src="assets/img/investSUS.svg">
         </a>
         <ul>
-            <li><a class="action-menu" href="#investsus">InvestSUS</a></li>
-            <li><a class="action-menu" href="#funcionalidades">Funcionalidades</a></li>
-            <li><a class="action-menu" href="#perfisDeAcesso">Perfis de Acesso</a></li>
-            <li><a class="action-menu" href="#comoAcessar">Como Acessar</a></li>
-            <li><a class="action-menu" href="#faleConosco">Fale Conosco</a></li>
+            <li><a class="menu-item" href="#investsus">InvestSUS</a></li>
+            <li><a class="menu-item" href="#funcionalidades">Funcionalidades</a></li>
+            <li><a class="menu-item" href="#perfisDeAcesso">Perfis de Acesso</a></li>
+            <li><a class="menu-item" href="#comoAcessar">Como Acessar</a></li>
+            <li><a class="menu-item" href="#faleConosco">Fale Conosco</a></li>
         </ul>
         <img alt="Menu" class="btn_menu" src="assets/img/menu_icon.svg">
     </nav>
@@ -71,33 +71,7 @@
             <h2>Conheça as funcionalidades do InvestSUS</h2>
             <div class="container-funcionalidades">
                 <div class="funcionalidades">
-<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-paineis">-->
-<!--                        <img alt="Painéis" src="assets/img/paineis.svg"/>-->
-<!--                        <h3>Painéis</h3>-->
-<!--                        <p>Painéis de Informações</p>-->
-<!--                        &lt;!&ndash;                        <p>Permite a visualização de painéis de informação completos, personalizados e atualizados.</p>&ndash;&gt;-->
-<!--                    </div>-->
-<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-acessos">-->
-<!--                        <img alt="Painéis" src="assets/img/acessos.svg"/>-->
-<!--                        <h3>Acessos</h3>-->
-<!--                        <p>Gerenciar Acessos</p>-->
-<!--                        &lt;!&ndash;                        <p>Facilita os gestores o acesso aos módulos de cadastro, solicitação e gestão dos perfis de&ndash;&gt;-->
-<!--                        &lt;!&ndash;                            acesso.</p>&ndash;&gt;-->
-<!--                    </div>-->
-<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-sistemas">-->
-<!--                        <img alt="Painéis" src="assets/img/sistemas.svg"/>-->
-<!--                        <h3>Sistemas</h3>-->
-<!--                        <p>Acesso a Sistemas.</p>-->
-<!--                        &lt;!&ndash;                        <p>Acesso direto e facilitado aos sistemas relacionados aos financiamentos federais do SUS.</p>&ndash;&gt;-->
-<!--                    </div>-->
-<!--                    <div class="seletor-funcionalidade" data-value="funcionalidade-relatorios">-->
-<!--                        <img alt="Painéis" src="assets/img/relatorios.svg"/>-->
-<!--                        <h3>Relatórios</h3>-->
-<!--                        <p>Relatório da Entidade</p>-->
-<!--                        &lt;!&ndash;                        <p>Emissão de relatórios detalhados com dados sobre a entidade de forma rápida, prática,&ndash;&gt;-->
-<!--                        &lt;!&ndash;                            intuitiva e com poucos cliques.</p>&ndash;&gt;-->
-<!--                    </div>-->
-                    <div class="seletor-funcionalidade" data-value="funcionalidade-cadastro">
+                    <div class="seletor-funcionalidade active" data-value="funcionalidade-cadastro">
                         <img alt="Cadastro" src="assets/img/cadastro.svg"/>
                         <h3>Cadastro</h3>
                         <p>Atualização Cadastral</p>
@@ -155,8 +129,17 @@
                 </div>
                 <div class="descricao-funcionalidades">
                     <div class="content-container">
-                        <div class="descricao-funcionalidade" id="funcionalidade-cadastro">
+                        <div class="descricao-funcionalidade active">
                             <h3>Cadastro</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aspernatur cumque doloremque dolorum est eum facilis nesciunt non nulla optio, placeat, provident quo repudiandae sequi tempora voluptatibus? Cumque, molestias.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aspernatur cumque doloremque dolorum est eum facilis nesciunt non nulla optio, placeat, provident quo repudiandae sequi tempora voluptatibus? Cumque, molestias.
+                            </p>
+                        </div>
+                        <div class="descricao-funcionalidade">
+                            <h3>Propostas</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto aspernatur cumque doloremque dolorum est eum facilis nesciunt non nulla optio, placeat, provident quo repudiandae sequi tempora voluptatibus? Cumque, molestias.
                             </p>
@@ -166,12 +149,12 @@
                         </div>
 
                         <div class="funcionalidades-navegacao">
-                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="prev-func" data-value="0" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.87305 12.6928C1.16235 11.9821 0.772217 11.0405 0.772217 10.0388C0.772217 9.03707 1.16235 8.09542 1.87061 7.38716L8.14088 1.15229C8.63038 0.665715 9.42189 0.667913 9.90871 1.15742C10.3955 1.64692 10.3931 2.43842 9.90358 2.925L3.63575 9.15743C3.40235 9.39107 3.27222 9.70479 3.27222 10.0388C3.27222 10.3725 3.40235 10.6865 3.63843 10.9226L9.90358 17.1523C10.3931 17.6391 10.3955 18.4306 9.90871 18.9201C9.66432 19.1657 9.34328 19.2888 9.02223 19.2888C8.70338 19.2888 8.38478 19.1677 8.14088 18.9253L1.87305 12.6928Z" fill="#CCCCCC"/>
                                 <path d="M28.6473 8.78882H8.20972C7.51929 8.78882 6.95972 9.34839 6.95972 10.0388C6.95972 10.7293 7.51929 11.2888 8.20972 11.2888H28.6473C29.3377 11.2888 29.8973 10.7293 29.8973 10.0388C29.8973 9.34839 29.3377 8.78882 28.6473 8.78882Z" fill="#CCCCCC"/>
                             </svg>
 
-                            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="next-func" class="active" data-value="0" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M28.4436 7.3848C29.1543 8.0955 29.5444 9.03715 29.5444 10.0389C29.5444 11.0406 29.1543 11.9822 28.446 12.6905L22.1758 18.9253C21.6863 19.4119 20.8948 19.4097 20.4079 18.9202C19.9211 18.4307 19.9236 17.6392 20.4131 17.1526L26.6809 10.9202C26.9143 10.6866 27.0444 10.3728 27.0444 10.0389C27.0444 9.70512 26.9143 9.39115 26.6782 9.15507L20.4131 2.92532C19.9236 2.4385 19.9211 1.647 20.4079 1.15749C20.6523 0.911889 20.9734 0.788842 21.2944 0.788842C21.6133 0.788842 21.9319 0.909935 22.1758 1.15237L28.4436 7.3848Z" fill="#CCCCCC"/>
                                 <path d="M1.6694 11.2888L22.1069 11.2888C22.7974 11.2888 23.3569 10.7292 23.3569 10.0388C23.3569 9.34839 22.7974 8.78881 22.1069 8.78881L1.6694 8.78881C0.978965 8.78881 0.419394 9.34839 0.419394 10.0388C0.419394 10.7292 0.978965 11.2888 1.6694 11.2888Z" fill="#CCCCCC"/>
                             </svg>
@@ -704,6 +687,6 @@
     <img alt="Voltar ao Início" id="scroll-up" src="assets/img/scroll-up.svg">
 </a>
 
-<script src="assets/js/scripts.js"></script>
+<script defer src="assets/js/scripts.js"></script>
 </body>
 </html>
