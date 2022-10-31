@@ -313,7 +313,7 @@ section#funcionalidades div.descricao-funcionalidades div.content-container img#
     display: none;
 }
 
-section#funcionalidades div.descricao-funcionalidades h3 {
+section#funcionalidades div.descricao-funcionalidade h3 {
     font-size: 1.8rem;
 
     margin-bottom: 40px;
@@ -322,7 +322,15 @@ section#funcionalidades div.descricao-funcionalidades h3 {
 
 }
 
-section#funcionalidades div.descricao-funcionalidades h3:before {
+section#funcionalidades div.descricao-funcionalidade {
+    display: none;
+}
+
+section#funcionalidades div.descricao-funcionalidade.active {
+    display: block;
+}
+
+section#funcionalidades div.descricao-funcionalidade h3:before {
     background-color: var(--primary-03-acent);
     content: '';
 
@@ -337,20 +345,16 @@ section#funcionalidades div.descricao-funcionalidades h3:before {
     top: -10px;
 }
 
-section#funcionalidades div.descricao-funcionalidades p {
-    text-indent: 36px;
+section#funcionalidades div.descricao-funcionalidade li {
+    margin: 24px 0;
 }
 
-section#funcionalidades div.descricao-funcionalidades p:not(:last-of-type) {
+section#funcionalidades div.descricao-funcionalidade p {
+    margin: 8px 0 0 12px;
+}
+
+section#funcionalidades div.descricao-funcionalidade p:not(:last-of-type) {
     margin-bottom: 12px;
-}
-
-section#funcionalidades div.descricao-funcionalidade {
-    display: none;
-}
-
-section#funcionalidades div.descricao-funcionalidade.active {
-    display: block;
 }
 
 section#funcionalidades div.funcionalidades-navegacao {
@@ -1041,6 +1045,10 @@ img#scroll-up:hover {
         padding-bottom: 60px;
     }
 
+    section#funcionalidades div.descricao-funcionalidades div.content-container {
+        justify-content: start;
+    }
+
     section#funcionalidades div.descricao-funcionalidades div.content-container img#close_desc_funcionalidade {
         width: 24px;
 
@@ -1051,6 +1059,10 @@ img#scroll-up:hover {
         top: 28px;
 
         z-index: 9;
+    }
+
+    section#funcionalidades div.descricao-funcionalidade {
+        margin-bottom: 60px;
     }
 }
 
