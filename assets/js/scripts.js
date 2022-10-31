@@ -121,7 +121,7 @@ function openDescricaoFuncionalidade() {
     })
 
     btn_prevFunc.addEventListener('click', () => {
-        let btn_prevFuncID = parseInt(btn_prevFunc.getAttribute('data-value') - 1)
+        let btn_prevFuncID = parseInt(btn_prevFunc.getAttribute('data-value')) - 1
 
         if (
             (
@@ -133,7 +133,7 @@ function openDescricaoFuncionalidade() {
     })
 
     btn_nextFunc.addEventListener('click', () => {
-        let btn_nextFuncID = parseInt(btn_nextFunc.getAttribute('data-value') + 1)
+        let btn_nextFuncID = parseInt(btn_nextFunc.getAttribute('data-value')) + 1
 
         if (
             (
@@ -143,6 +143,7 @@ function openDescricaoFuncionalidade() {
             ativarFuncionalidade(btn_nextFuncID)
         }
     })
+
 }
 
 function closeDescricaoFuncionalidade() {

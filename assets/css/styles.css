@@ -179,8 +179,6 @@ header#main img.btn_menu {
 main section {
     min-height: 100vh;
     padding: 80px 0;
-    display: flex;
-    align-items: center;
 }
 
 /*<editor-fold desc="section-investsus">*/
@@ -377,7 +375,7 @@ section#funcionalidades div.funcionalidades-navegacao svg:hover path, section#fu
 /*<editor-fold desc="section-perfisDeAcesso">*/
 
 section#perfisDeAcesso div#perfisDeAcesso-title {
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 }
 
 section#perfisDeAcesso div#perfisDeAcesso-title p {
