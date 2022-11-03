@@ -367,7 +367,7 @@ section#funcionalidades div.funcionalidades-navegacao svg {
     cursor: pointer;
 }
 
-section#funcionalidades div.funcionalidades-navegacao svg:hover path, section#funcionalidades div.funcionalidades-navegacao svg.active path {
+section#funcionalidades div.funcionalidades-navegacao svg.active path {
     fill: var(--primary-03-acent);
 }
 /*</editor-fold>*/
