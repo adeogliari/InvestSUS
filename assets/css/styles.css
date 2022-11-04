@@ -278,7 +278,8 @@ section#funcionalidades div.seletor-funcionalidade {
 }
 
 section#funcionalidades div.seletor-funcionalidade.active, section#funcionalidades div.seletor-funcionalidade:hover {
-    box-shadow: var(--shadow-01);
+    border: 1px solid var(--primary-01-acent);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
 }
 
 section#funcionalidades div.seletor-funcionalidade img {
@@ -372,7 +373,7 @@ section#funcionalidades div.funcionalidades-navegacao svg.active path {
 }
 /*</editor-fold>*/
 
-/*<editor-fold desc="section-perfisDeAcesso">*/
+ /*<editor-fold desc="section-perfisDeAcesso">*/
 
 section#perfisDeAcesso div#perfisDeAcesso-title {
     margin-bottom: 48px;
