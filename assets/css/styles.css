@@ -260,6 +260,7 @@ section#funcionalidades div.funcionalidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px;
 
     box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.25);
 }
@@ -271,6 +272,8 @@ section#funcionalidades div.seletor-funcionalidade {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+
+    border: 1px solid #fff;
 
     border-radius: var(--border-radius);
 
