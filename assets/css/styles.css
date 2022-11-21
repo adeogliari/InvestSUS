@@ -140,9 +140,9 @@ header#main ul {
 header#main li a {
     color: var(--black-08);
     font-family: var(--title-font);
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
-    letter-spacing: .02rem;
+    letter-spacing: .01rem;
 
     position: relative;
 }
