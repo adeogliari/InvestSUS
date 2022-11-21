@@ -143,7 +143,6 @@ function openDescricaoFuncionalidade() {
             ativarFuncionalidade(btn_nextFuncID)
         }
     })
-
 }
 
 function closeDescricaoFuncionalidade() {
