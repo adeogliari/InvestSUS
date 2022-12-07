@@ -151,6 +151,10 @@ header#main li a:hover, header#main li a.active {
     color: var(--primary-06);
 }
 
+header#main li a.active {
+    font-weight: bold;
+}
+
 header#main img.btn_menu {
     display: none;
 }
@@ -238,7 +242,7 @@ section#funcionalidades div.funcionalidades {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px;
 
     box-shadow: 4px 0 4px -4px rgba(0, 0, 0, 0.25);
@@ -267,6 +271,10 @@ section#funcionalidades div.seletor-funcionalidade.active, section#funcionalidad
 section#funcionalidades div.seletor-funcionalidade img {
     width: 32px;
     height: 32px;
+}
+
+section#funcionalidades div.seletor-funcionalidade h3 {
+    text-align: center;
 }
 
 section#funcionalidades div.seletor-funcionalidade p {
